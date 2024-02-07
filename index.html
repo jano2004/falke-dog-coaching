@@ -67,7 +67,14 @@
     </header>
     <main class="main">
         <div class="image_container_header_pic">
-            <img class="headerPic" src="pictures/headerPicReframed.jpg">
+            <img class="headerPic" id="headerPic" src="pictures/headerPicReframed.jpg">
+            <script>
+                window.addEventListener('scroll', function() {
+                    var scrollPosition = window.pageYOffset;
+                    var headerPic = document.getElementById('headerPic');
+                    headerPic.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)'; // Der Multiplikator 0.3 bestimmt die Geschwindigkeit des "Mitrollens". Passen Sie diesen Wert nach Bedarf an.
+                });
+                </script>                
         </div>
         <div class="container1">
             <p class="para_c1">INDIVIDUELLES COACHING FÜR MENSCH UND HUND</p>
