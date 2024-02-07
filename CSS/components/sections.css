@@ -13,31 +13,102 @@
 
 .block-text {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 2rem;
+    margin: 10px auto; 
     padding: 10px 20px;
     font-weight: 100;
+    width: 50%; 
 }
+
 
 .content-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 80px;
+    align-items: flex-start;
+    gap: auto;
 }
 
 .block-list {
-    font-size: 1.5rem;
     text-align: left;
+    font-size: 1.8rem;
     font-weight: 100;
-    flex-basis: 15%;
-    list-style-type: disc;
-    margin: 0;
+    flex-basis: 27%;
+    list-style-type: none;
+    margin-top: 10px;
     padding-left: 10px;
 }
 
+.block-list li {
+    margin: 10px;
+}
+
+.block-list li {
+    position: relative; 
+    padding-left: 20px;
+}
+
+.block-list li::before {
+    content: '- '; 
+    position: absolute;
+    left: 0; 
+}
+
+.block-list-whide {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 100;
+    flex-basis: 20%;
+    width: auto;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.block-list-whide li {
+    margin: 10px;
+}
+
+.block-list-whide li {
+    position: relative; 
+    padding-left: 20px;
+}
+
+.block-list-whide li::before {
+    content: '- '; 
+    position: absolute;
+    left: 0; 
+}
+
 .block-image {
-    flex-basis: 15%;
-    width: 90px;
-    height: 300px;
+    margin-top: auto;
+    flex-basis: 20%;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.block-list-button {
+    margin: auto;
+    color: white;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.block-list-button {
+    display: block;
+    margin: 20px auto;
+    height: 60px;
+    width: 400px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.block-list-text {
+    margin: 5px;
+}
+
+.image-button-container {
+    width: auto;
 }
