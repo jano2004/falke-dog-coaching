@@ -19,3 +19,8 @@
   margin-top: 5px;
   letter-spacing: 2px;
 }
+
+.historie_pic_container {
+  display: flex;
+  justify-content: center; 
+}

@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Falke Dog Coaching</title>
     <link rel="stylesheet" href="CSS/utils/styles.css">
     <link rel="stylesheet" href="CSS/components/header.css">
@@ -19,11 +19,51 @@
         <div class="logo-container">
             <img src="pictures/logo.jpg" alt="Falke Dog Coaching Logo" class="logo-image">
         </div>
-        <div class="nav-item"><a href="#home" class="nav-link">HOME</a></div>
-        <div class="nav-item"><a href="#philosophie" class="nav-link">PHILOSOPHIE</a></div>
-        <div class="nav-item"><a href="#leistungen" class="nav-link">LEISTUNGEN</a></div>
-        <div class="nav-item"><a href="#historie" class="nav-link">HISTORIE</a></div>
-        <div class="nav-item"><a href="#referenzen" class="nav-link">REFERENZEN</a></div>
+
+        <div onclick="scrollToElementHome()" class="nav-item"><a href="Home" class="nav-link">HOME</a></div>
+        <script>
+            function scrollToElementHome() {
+                document.getElementById("home").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementLeistung()" class="nav-item"><a href="Leistungen" class="nav-link">LEISTUNGEN</a></div>
+        <script>
+            function scrollToElementLeistung() {
+                document.getElementById("leistungen").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementPreise()" class="nav-item"><a href="Preise" class="nav-link">PREISE</a></div>
+        <script>
+            function scrollToElementPreise() {
+                document.getElementById("preise").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementHistorie()" class="nav-item"><a href="Historie" class="nav-link">HISTORIE</a></div>
+        <script>
+            function scrollToElementHistorie() {
+                document.getElementById("historie").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+        <div onclick="scrollToElementRefernzen()" class="nav-item"><a href="Referenzen" class="nav-link">REFERENZEN</a></div>
+        <script>
+            function scrollToElementRefernzen() {
+                document.getElementById("referenzen").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
     </header>
     <main class="main">
         <div class="image_container_header_pic">
@@ -39,7 +79,7 @@
                     <button class="button-in-box">DETAILS</button>
                 </div>
             </div>
-            <p class="para_c1_line"></p>
+            <p class="para_c1_line" id="home"></p>
         </div>
         <div class="home_text_container">
           <h2 class="home_text">MEHR ALS HUNDETRAINING</h2>
@@ -55,8 +95,8 @@
             <p class="home_main_text">Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund!</p>
             <p></p>
             <p class="home_main_text">Ihre Jennifer Falke</p>
-            <p class="para_c1_line"></p>
         </div>
+        <p class="para_c1_line" id="leistungen"></p>
         <section class="section">
             <div class="block">
                 <h2 class="block-title">KLASSISCHES HUNDETRAINING</h2>
@@ -129,9 +169,13 @@
                     </ul>
                 </div>
             </div>
+            <p class="para_c1_line"></p>
         </section>
+        <div class="historie_pic_container">
+            <img src="pictures/historiePic.png" alt="historie picture load" class="historie_pic">
+        </div>
         <div class="historie_text_container">
-          <p class="para_c1_line"></p>
+          <p class="para_c1_line" id="historie"></p>
           <h2 class="historie_text">HISTORIE</h2>
             <p class="historie_main_text">Die Leidenschaft von Hunden umgeben zu sein, mich mit Ihnen auseinander zu setzen und sie zu verstehen begann bereits sehr früh.</p>
             <p class="historie_main_text">Nachdem ich sämtliche Nachbarshunde ausführte, mich Stunden lang mit Hundebüchern beschäftigte, begann ich mit 10 Jahren ehrenamtlich Tierheimhunde auszuführen.</p>
@@ -173,5 +217,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

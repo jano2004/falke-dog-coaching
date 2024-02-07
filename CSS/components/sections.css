@@ -83,7 +83,7 @@
     margin-top: auto;
     flex-basis: 20%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .block-list-button {
@@ -98,12 +98,13 @@
 }
 
 .block-list-button {
+    font-weight: normal;
     display: block;
     margin: 20px auto;
     height: 60px;
     width: 400px;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -112,7 +113,6 @@
     color: black;
     
 }
-
 
 .block-list-text {
     margin: 5px;
