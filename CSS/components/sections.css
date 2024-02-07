@@ -1,3 +1,11 @@
+.section {
+    display: flex;
+    flex-direction: column; /* Stapelt die .block-Elemente vertikal */
+    align-items: center; /* Zentriert die .block-Elemente horizontal */
+    justify-content: center; /* Optional, falls Sie auch eine vertikale Zentrierung innerhalb des .section-Containers wünschen */
+  }
+  
+
 .block {
     text-align: center;
     margin-bottom: 20px;
@@ -98,7 +106,7 @@
 }
 
 .block-list-button {
-    font-weight: normal;
+    font-weight: 150;
     display: block;
     margin: 20px auto;
     height: 60px;
@@ -110,9 +118,13 @@
 
 .block-list-button:hover {
     background-color: rgba(0,0,0,0);
-    color: black;
-    
+    color: black;   
 }
+
+.block {
+    width: 65%;
+    border: 2px solid #000; /* Setzt einen 2 Pixel dicken, soliden, schwarzen Rahmen */
+}  
 
 .block-list-text {
     margin: 5px;
