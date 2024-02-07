@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+ul {
+    font-weight: 100;
+}
+
+h {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}

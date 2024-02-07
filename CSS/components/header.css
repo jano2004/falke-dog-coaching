@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: black;
+    padding: 10px;
+}
+
+.logo-container {
+    margin-right: 20rem;
+}
+
+.nav-item {
+    margin-right: 5rem;
+}
+
+.nav-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+    overflow: hidden;
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+.logo-image {
+    width: 25rem;
+}

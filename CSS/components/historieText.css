@@ -1,0 +1,21 @@
+.historie_text_container {
+  text-align: center;
+}
+
+.historie_text {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.historie_main_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
