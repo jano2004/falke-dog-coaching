@@ -61,6 +61,24 @@ Website for Falke-Dog-Coaching
 @media (min-width: 1025px) and (max-width: 1500px) {
 
 
+## Code-Templates
+
+### Div:
+div_$containername
+
+### Images:
+img_$containername_$image-name
+
+### Header:
+head_$header-type_$containername_$header-name
+
+### Select: 
+select_$containername_$select-name
+#### Option:
+option_of_$select_$option-name
+
+### UL:
+ul_$containername_$ul-name
 
 
 
