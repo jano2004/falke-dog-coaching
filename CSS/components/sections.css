@@ -3,9 +3,12 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-  }
-  
+}
 
+.para_c1_line_small_window {
+    visibility: hidden;
+}
+  
 .block {
     text-align: center;
     margin-bottom: 20px;
@@ -27,7 +30,6 @@
     font-weight: 100;
     width: 50%; 
 }
-
 
 .content-container {
     display: flex;
@@ -133,4 +135,309 @@
 
 .image-button-container {
     width: auto;
+}
+
+@media (max-width: 480px) {
+    .para_c1_line_small_window {
+        visibility: visible;
+    }
+
+    .para_c1_line_small_window {
+        margin: 40px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .para_c1_line_small_window::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .section, .block, .content-container, .block-list-whide, .block-image, .block-list-button {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .block-list {
+        flex-direction: column;
+        align-items: left;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .block-title {
+        font-size: 2rem;
+    }
+
+    .block-text, .block-list, .block-list-whide {
+        font-size: 1rem;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .block {
+        width: 65%;
+        border: 0;
+    }
+
+    .block-image {
+        height: 200px;
+    }
+
+    .block-list-button {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .para_c1_line_small_window {
+        visibility: visible;
+    }
+
+    .para_c1_line_small_window {
+        margin: 40px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .para_c1_line_small_window::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Änderung von default row zu column */
+        justify-content: center;
+        align-items: center; /* Zentriert die Inhalte horizontal */
+        gap: 20px; /* Fügt Abstand zwischen den Elementen hinzu */
+    }
+    
+    .block, .block-list, .block-list-whide, .block-image, .block-list-button {
+        width: 100%; /* Passt die Breite der Elemente an, um die volle Containerbreite zu nutzen */
+        text-align: center; /* Stellt sicher, dass der Text zentriert ist, wenn nötig */
+        margin-bottom: 20px; /* Fügt unten an jedem Element Abstand hinzu */
+    }
+    
+    .block-text, .block-list, .block-list-whide {
+        /* Wenn sie bereits eine bestimmte Breite haben, passen Sie diese an oder entfernen Sie sie, um sie responsiv zu machen */
+        width: auto; /* Oder eine prozentuale Breite für bessere Responsivität */
+    }
+    
+    .block-list li, .block-list-whide li {
+        padding-left: 0; /* Entfernt das Padding links, falls nicht mehr benötigt */
+    }
+    
+    .block-list li::before, .block-list-whide li::before {
+        content: ''; /* Entfernt das vorangestellte '-' Zeichen, wenn nicht gewünscht */
+    }
+    
+    .block-image {
+        height: auto; /* Passt die Höhe automatisch an die Breite an, um das Seitenverhältnis zu bewahren */
+        max-width: 600px; /* Optional: Begrenzt die Breite des Bildes */
+        margin: 0 auto; /* Zentriert das Bild */
+    }
+    
+    .block-list-button {
+        width: 80%; /* Passt die Breite des Buttons an */
+        max-width: 400px; /* Begrenzt die maximale Breite des Buttons */
+        margin: 20px auto; /* Zentriert den Button und fügt oben und unten Abstand hinzu */
+    }
+
+    .section, .block, .content-container, .block-list, .block-list-whide, .block-image, .block-list-button {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .block-title {
+        font-size: 2.5rem;
+    }
+
+    .block-text, .block-list, .block-list-whide {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .block {
+        width: 65%;
+        border: 0;
+    }
+
+    .block-image {
+        height: 250px;
+    }
+
+    .block-list-button {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .para_c1_line_small_window {
+        visibility: visible;
+    }
+
+    .para_c1_line_small_window {
+        margin: 40px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .para_c1_line_small_window::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Änderung von default row zu column */
+        justify-content: center;
+        align-items: center; /* Zentriert die Inhalte horizontal */
+        gap: 20px; /* Fügt Abstand zwischen den Elementen hinzu */
+    }
+    
+    .block, .block-list, .block-list-whide, .block-image, .block-list-button {
+        width: 100%; /* Passt die Breite der Elemente an, um die volle Containerbreite zu nutzen */
+        text-align: center; /* Stellt sicher, dass der Text zentriert ist, wenn nötig */
+        margin-bottom: 20px; /* Fügt unten an jedem Element Abstand hinzu */
+    }
+    
+    .block-text, .block-list, .block-list-whide {
+        /* Wenn sie bereits eine bestimmte Breite haben, passen Sie diese an oder entfernen Sie sie, um sie responsiv zu machen */
+        width: auto; /* Oder eine prozentuale Breite für bessere Responsivität */
+    }
+    
+    .block-list li, .block-list-whide li {
+        padding-left: 0; /* Entfernt das Padding links, falls nicht mehr benötigt */
+    }
+    
+    .block-list li::before, .block-list-whide li::before {
+        content: ''; /* Entfernt das vorangestellte '-' Zeichen, wenn nicht gewünscht */
+    }
+    
+    .block-image {
+        height: auto; /* Passt die Höhe automatisch an die Breite an, um das Seitenverhältnis zu bewahren */
+        max-width: 600px; /* Optional: Begrenzt die Breite des Bildes */
+        margin: 0 auto; /* Zentriert das Bild */
+    }
+    
+    .block-list-button {
+        width: 80%; /* Passt die Breite des Buttons an */
+        max-width: 400px; /* Begrenzt die maximale Breite des Buttons */
+        margin: 20px auto; /* Zentriert den Button und fügt oben und unten Abstand hinzu */
+    }
+
+    .block-title {
+        font-size: 3rem;
+    }
+
+    .block-text, .block-list, .block-list-whide {
+        font-size: 1.5rem;
+    }
+
+    .block-image {
+        height: 300px;
+    }
+
+    .block {
+        width: 65%;
+        border: 0;
+    }
+
+    .block-list-button {
+        font-size: 2rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+    .para_c1_line_small_window {
+        visibility: visible;
+    }
+
+    .para_c1_line_small_window {
+        margin: 40px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .para_c1_line_small_window::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Änderung von default row zu column */
+        justify-content: center;
+        align-items: center; /* Zentriert die Inhalte horizontal */
+        gap: 20px; /* Fügt Abstand zwischen den Elementen hinzu */
+    }
+    
+    .block, .block-list, .block-list-whide, .block-image, .block-list-button {
+        width: 100%; /* Passt die Breite der Elemente an, um die volle Containerbreite zu nutzen */
+        text-align: center; /* Stellt sicher, dass der Text zentriert ist, wenn nötig */
+        margin-bottom: 20px; /* Fügt unten an jedem Element Abstand hinzu */
+    }
+    
+    .block-text, .block-list, .block-list-whide {
+        /* Wenn sie bereits eine bestimmte Breite haben, passen Sie diese an oder entfernen Sie sie, um sie responsiv zu machen */
+        width: auto; /* Oder eine prozentuale Breite für bessere Responsivität */
+    }
+    
+    .block-list li, .block-list-whide li {
+        padding-left: 0; /* Entfernt das Padding links, falls nicht mehr benötigt */
+    }
+    
+    .block-list li::before, .block-list-whide li::before {
+        content: ''; /* Entfernt das vorangestellte '-' Zeichen, wenn nicht gewünscht */
+    }
+    
+    .block-image {
+        height: auto; /* Passt die Höhe automatisch an die Breite an, um das Seitenverhältnis zu bewahren */
+        max-width: 600px; /* Optional: Begrenzt die Breite des Bildes */
+        margin: 0 auto; /* Zentriert das Bild */
+    }
+    
+    .block-list-button {
+        width: 80%; /* Passt die Breite des Buttons an */
+        max-width: 400px; /* Begrenzt die maximale Breite des Buttons */
+        margin: 20px auto; /* Zentriert den Button und fügt oben und unten Abstand hinzu */
+    }
+
+    .block {
+        width: 65%;
+        border: 0;
+    }
+
+    .block-image {
+        height: 350px;
+    }
+
+    .block-list-button {
+        font-size: 2.2rem;
+        width: 100%;
+    }
 }
