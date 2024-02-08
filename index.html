@@ -202,17 +202,41 @@
                         <li>Sminare & Workshops auf Anfrage</li>
                         <div class="leistungen_typ_container">
                             <select name="leistungenType" id="leistungenType">
-                                <option value="leistungen_listbox">LEISTUNGEN</option>
-                                <option value="klassisch_listbox">Klassisches Hundetraining</option>
-                                <option value="teamarbeit_listbox">Team-Arbeit und Anlageförderung</option>
-                                <option value="diensthund_listbox">Diensthundetraining</option>
-                                <option value="workshops_listbox">Workshops / Sonstiges</option>
+                                <option value="leistungen">LEISTUNGEN</option>
+                                <option value="klassisch">Klassisches Hundetraining</option>
+                                <option value="teamarbeit">Team-Arbeit und Anlageförderung</option>
+                                <option value="diensthund">Diensthundetraining</option>
+                                <option value="workshops">Workshops / Sonstiges</option>
                             </select>
-                            <button onclick="sendEmailWithLeistungsType()" class="leistungen_type_button">ABSENDEN</button>
-                            <script>
-
-                            </script>
-                        </div>
+                            <button onclick="sendEmailWithSelectedLeistungsType()" class="leistungen_type_button">ABSENDEN</button>
+                        </div>    
+                        <script>
+                            function sendEmailWithSelectedLeistungsType() {
+                                var leistungenType = document.getElementById('leistungenType').value;
+                                sendEmailWithLeistungsType(leistungenType);
+                            }
+                            
+                            function sendEmailWithLeistungsType(leistungenType) {
+                                var emailAddress = 'janpaulwagner2004@gmail.com'; 
+                                var subject;
+                                if(leistungenType === "leistungen") {
+                                    subject = "Allgemeine Anfrage";
+                                } else if (leistungenType === "klassisch") {
+                                    subject = "Anfrage - Klassisches Hundetraining";
+                                } else if (leistungenType === "teamarbeit") {
+                                    subject = "Anfrage - Team-Arbeit und Anlageförderung";
+                                } else if (leistungenType === "diensthund") {
+                                    subject = "Anfrage - Diensthundetraining";
+                                } else if (leistungenType === "workshops") {
+                                    subject = "Anfrage - Workshops / Sonstiges";
+                                } else {
+                                    return; 
+                                }
+                                var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
+                                window.location.href = mailtoLink; 
+                            }
+                        </script>
+                                           
                     </ul>
                 </div>
             </div>
