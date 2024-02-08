@@ -1,8 +1,8 @@
 .section {
     display: flex;
-    flex-direction: column; /* Stapelt die .block-Elemente vertikal */
-    align-items: center; /* Zentriert die .block-Elemente horizontal */
-    justify-content: center; /* Optional, falls Sie auch eine vertikale Zentrierung innerhalb des .section-Containers wünschen */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
   }
   
 
@@ -124,7 +124,7 @@
 
 .block {
     width: 65%;
-    border: 2px solid #000; /* Setzt einen 2 Pixel dicken, soliden, schwarzen Rahmen */
+    border: 2px solid #000;
 }  
 
 .block-list-text {

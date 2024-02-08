@@ -1,24 +1,52 @@
-.headerPic {
-    width: 100%;
-}
-
-.image_container_header_pic {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
 .image_container_header_pic {
     overflow: hidden;
     position: relative;
-    height: 800px; 
+    width: 100%;
+    height: 800px; /* Standardhöhe für große Bildschirme */
 }
 
 .headerPic {
     position: relative;
     width: 100%;
-    bottom: 100px;
+    bottom: 100px; /* Anpassung für spezifisches Design */
     left: 0;
-    z-index: -1; 
-    pointer-events: none; 
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Media Queries für verschiedene Geräte */
+@media (max-width: 1024px) { /* Für Tablets wie das iPad */
+    .image_container_header_pic {
+        height: 600px; /* Reduzierte Höhe für kleinere Geräte */
+    }
+    .headerPic {
+        bottom: 75px; /* Angepasste Position */
+    }
+}
+
+@media (max-width: 768px) { /* Für kleinere Tablets und größere Smartphones */
+    .image_container_header_pic {
+        height: 400px;
+    }
+    .headerPic {
+        bottom: 50px; /* Weitere Anpassung der Position */
+    }
+}
+
+@media (max-width: 480px) { /* Für Smartphones */
+    .image_container_header_pic {
+        height: 300px;
+    }
+    .headerPic {
+        bottom: 25px; /* Anpassung für sehr kleine Displays */
+    }
+}
+
+@media (max-width: 330px) { /* Für sehr kleine Geräte */
+    .image_container_header_pic {
+        height: 200px;
+    }
+    .headerPic {
+        bottom: 0; /* Minimale oder keine Verschiebung nach unten */
+    }
 }

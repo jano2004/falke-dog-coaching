@@ -1,58 +1,6 @@
-.container1, .image-with-info {
+.container1 {
+    margin-top: 0;
     position: relative;
-}
-
-.info-box {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-    position: absolute;
-    width: 550px;
-    height: 350px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    padding-top: 0px;
-    box-sizing: border-box;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-in-box {
-    position: absolute;
-    margin: auto;
-    bottom: 15px;
-    right: 15px;
-    padding: 20px 35px;
-    border-radius: 10px;
-    background-color: black;
-    font-size: 1.4rem;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.button-in-box:hover {
-    background-color: rgba(0,0,0,0);
-    color: black;
-}
-
-.info-box h1 {
-    margin: 0 0 30px 0;
-    font-size: 2.5rem;
-    font-weight: normal;
-    text-decoration: underline;
-}
-
-.info-box p {
-    margin: 0;
-    font-size: 1.2rem;
 }
 
 .para_c1 {
