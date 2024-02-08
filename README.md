@@ -46,6 +46,22 @@ Website for Falke-Dog-Coaching
 3. color: #fffff;
 
 
+## @media-Types
+
+### iPhone: 
+@media (max-width: 480px)
+
+### iPad:
+@media (min-width: 481px) and (max-width: 768px)
+
+### MacBook:
+@media (min-width: 769px) and (max-width: 1024px) {
+
+### iMac:
+@media (min-width: 1025px) and (max-width: 1500px) {
+
+
+
 
 
 
