@@ -19,7 +19,41 @@ Website for Falke-Dog-Coaching
 
 ### Pulls (fetch with merge)
 1. git status (If clean: go on, if not: commit)
-2. git pull 
+2. git pull
+
+
+# Code-Templates
+
+## Main-Usages:
+##### only use classe's!
+##### only use underscore's!
+
+
+## section:
+section_$section-name
+
+## div:
+div_$container-name
+
+## images:
+img_$container-name_$image-name
+
+## header:
+head_$header-type_$container-name_$header-name
+
+## select: 
+select_$container-name_$select-name
+### option:
+option_of_$select_$option-name
+
+## ul:
+ul_$container-name_$ul-name
+### li:
+li_of_$ul_$li-name (li-name if needed)
+
+## p:
+p_$container-name_$p-name
+
 
 ## Fonts
 
@@ -45,6 +79,20 @@ Website for Falke-Dog-Coaching
 2. color: rgba(0, 0, 0, 100);
 3. color: #fffff;
 
+
+## @media-Types
+
+### iPhone: 
+@media (max-width: 480px)
+
+### iPad:
+@media (min-width: 481px) and (max-width: 768px)
+
+### MacBook:
+@media (min-width: 769px) and (max-width: 1024px) {
+
+### iMac:
+@media (min-width: 1025px) and (max-width: 1500px) {
 
 
 
