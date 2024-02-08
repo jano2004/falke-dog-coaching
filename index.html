@@ -209,34 +209,8 @@
                                 <option value="workshops">Workshops / Sonstiges</option>
                             </select>
                             <button onclick="sendEmailWithSelectedLeistungsType()" class="leistungen_type_button">ABSENDEN</button>
-                        </div>    
-                        <script>
-                            function sendEmailWithSelectedLeistungsType() {
-                                var leistungenType = document.getElementById('leistungenType').value;
-                                sendEmailWithLeistungsType(leistungenType);
-                            }
-                            
-                            function sendEmailWithLeistungsType(leistungenType) {
-                                var emailAddress = 'janpaulwagner2004@gmail.com'; 
-                                var subject;
-                                if(leistungenType === "leistungen") {
-                                    subject = "Allgemeine Anfrage";
-                                } else if (leistungenType === "klassisch") {
-                                    subject = "Anfrage - Klassisches Hundetraining";
-                                } else if (leistungenType === "teamarbeit") {
-                                    subject = "Anfrage - Team-Arbeit und Anlageförderung";
-                                } else if (leistungenType === "diensthund") {
-                                    subject = "Anfrage - Diensthundetraining";
-                                } else if (leistungenType === "workshops") {
-                                    subject = "Anfrage - Workshops / Sonstiges";
-                                } else {
-                                    return; 
-                                }
-                                var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
-                                window.location.href = mailtoLink; 
-                            }
-                        </script>
-                                           
+                            <script src="Scripts/sendEmailFunktion.js"></script>
+                        </div>                   
                     </ul>
                 </div>
             </div>
