@@ -25,8 +25,8 @@ Website for Falke-Dog-Coaching
 # Code-Templates
 
 ## Main-Usages:
-only use classe's!
-only use underscore's!
+##### only use classe's!
+##### only use underscore's!
 
 
 ## section:
