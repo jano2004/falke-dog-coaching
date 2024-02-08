@@ -21,8 +21,21 @@ Website for Falke-Dog-Coaching
 1. git status (If clean: go on, if not: commit)
 2. git pull
 
+# File-Anomaly
 
-# Code-Templates
+## CSS:
+$section/$div.css
+
+## Images:
+$section/$div_image_$placement.jpg
+
+## JS:
+$function.js
+for every function there will be a .js file!
+
+
+
+# Code-Anomaly
 
 ## Main-Usages:
 ##### only use classe's!
