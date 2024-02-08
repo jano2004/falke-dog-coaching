@@ -2,51 +2,50 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 800px; /* Standardhöhe für große Bildschirme */
+    height: 700px; 
 }
 
 .headerPic {
     position: relative;
     width: 100%;
-    bottom: 100px; /* Anpassung für spezifisches Design */
+    bottom: 100px; 
     left: 0;
     z-index: -1;
     pointer-events: none;
 }
 
-/* Media Queries für verschiedene Geräte */
-@media (max-width: 1024px) { /* Für Tablets wie das iPad */
+@media (max-width: 1024px) { 
     .image_container_header_pic {
-        height: 600px; /* Reduzierte Höhe für kleinere Geräte */
+        height: 600px;
     }
     .headerPic {
-        bottom: 75px; /* Angepasste Position */
+        bottom: 75px; 
     }
 }
 
-@media (max-width: 768px) { /* Für kleinere Tablets und größere Smartphones */
+@media (max-width: 768px) {
     .image_container_header_pic {
         height: 400px;
     }
     .headerPic {
-        bottom: 50px; /* Weitere Anpassung der Position */
+        bottom: 50px; 
     }
 }
 
-@media (max-width: 480px) { /* Für Smartphones */
+@media (max-width: 480px) {
     .image_container_header_pic {
         height: 300px;
     }
     .headerPic {
-        bottom: 25px; /* Anpassung für sehr kleine Displays */
+        bottom: 25px; 
     }
 }
 
-@media (max-width: 330px) { /* Für sehr kleine Geräte */
+@media (max-width: 330px) { 
     .image_container_header_pic {
         height: 200px;
     }
     .headerPic {
-        bottom: 0; /* Minimale oder keine Verschiebung nach unten */
+        bottom: 0; 
     }
 }
