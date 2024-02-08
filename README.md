@@ -22,31 +22,31 @@ Website for Falke-Dog-Coaching
 2. git pull
 
 
-## Code-Templates
+# Code-Templates
 
-### section:
+## section:
 section_$section-name
 
-### div:
+## div:
 div_$container-name
 
-### images:
+## images:
 img_$container-name_$image-name
 
-### header:
+## header:
 head_$header-type_$container-name_$header-name
 
-### select: 
+## select: 
 select_$container-name_$select-name
-#### option:
+### option:
 option_of_$select_$option-name
 
-### ul:
+## ul:
 ul_$container-name_$ul-name
-#### li:
+### li:
 li_of_$ul_$li-name (li-name if needed)
 
-### p:
+## p:
 p_$container-name_$p-name
 
 
