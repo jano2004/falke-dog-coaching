@@ -1,0 +1,6 @@
+.section_pricing {
+    display: flex;
+    flex-direction: column; /* Stapelt die .block-Elemente vertikal */
+    align-items: center; /* Zentriert die .block-Elemente horizontal */
+    justify-content: center; /* Optional, falls Sie auch eine vertikale Zentrierung innerhalb des .section-Containers wünschen */
+  }
