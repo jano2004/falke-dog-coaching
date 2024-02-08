@@ -19,7 +19,36 @@ Website for Falke-Dog-Coaching
 
 ### Pulls (fetch with merge)
 1. git status (If clean: go on, if not: commit)
-2. git pull 
+2. git pull
+
+
+## Code-Templates
+
+### section:
+section_$section-name
+
+### div:
+div_$container-name
+
+### images:
+img_$container-name_$image-name
+
+### header:
+head_$header-type_$container-name_$header-name
+
+### select: 
+select_$container-name_$select-name
+#### option:
+option_of_$select_$option-name
+
+### ul:
+ul_$container-name_$ul-name
+#### li:
+li_of_$ul_$li-name (li-name if needed)
+
+### p:
+p_$container-name_$p-name
+
 
 ## Fonts
 
@@ -59,26 +88,6 @@ Website for Falke-Dog-Coaching
 
 ### iMac:
 @media (min-width: 1025px) and (max-width: 1500px) {
-
-
-## Code-Templates
-
-### Div:
-div_$containername
-
-### Images:
-img_$containername_$image-name
-
-### Header:
-head_$header-type_$containername_$header-name
-
-### Select: 
-select_$containername_$select-name
-#### Option:
-option_of_$select_$option-name
-
-### UL:
-ul_$containername_$ul-name
 
 
 
