@@ -48,3 +48,65 @@
     height: 2px;
     background-color: black;
 }
+
+/*Phone:*/
+@media (max-width: 480px) {
+    .para_c1_line {
+        visibility: hidden;
+    }
+
+    .para_c1 {
+        font-size: 1.6rem;
+    }
+
+    .home_text_container {
+        width: 90%;
+    }
+
+    .home_text_container p {
+        font-size: 1.1rem;
+    }
+}
+
+/*iPad:*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .para_c1_line {
+        visibility: hidden;
+    }
+
+    .para_c1 {
+        font-size: 1.6rem;
+    }
+
+    .home_text_container {
+        width: 90%;
+    }
+
+    .home_text_container p {
+        font-size: 1.4rem;
+    }
+}
+
+/*MacBook:*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .para_c1_line {
+        visibility: hidden;
+    }
+
+    .para_c1 {
+        font-size: 1.6rem;
+    }
+    
+    .home_text_container {
+        width: 90%;
+    }
+
+    .home_text_container p {
+        font-size: 1.1rem;
+    }
+}
+
+/*iMac:*/
+@media (min-width: 1025px) and (max-width: 1500px) {
+    
+}

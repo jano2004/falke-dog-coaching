@@ -2,50 +2,52 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 900px; 
+    height: 700px; 
 }
 
 .headerPic {
     position: relative;
     width: 100%;
-    bottom: 230px; 
+    bottom: 150px; 
     left: 0;
     z-index: -1;
     pointer-events: none;
 }
 
-@media (max-width: 1024px) { 
-    .image_container_header_pic {
-        height: 700px;
-    }
-    .headerPic {
-        bottom: 230px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .image_container_header_pic {
-        height: 400px;
-    }
-    .headerPic {
-        bottom: 230px; 
-    }
-}
-
+/*Phone:*/
 @media (max-width: 480px) {
-    .image_container_header_pic {
-        height: 300px;
-    }
     .headerPic {
-        bottom: 230px; 
+        bottom: 50px;
     }
-}
 
-@media (max-width: 330px) { 
     .image_container_header_pic {
         height: 200px;
     }
+}
+
+/*iPad:*/
+@media (min-width: 481px) and (max-width: 768px) {
     .headerPic {
-        bottom: 230px; 
+        bottom: 70px;
     }
+
+    .image_container_header_pic {
+        height: 270px;
+    }
+}
+
+/*MacBook:*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .headerPic {
+        bottom: 70px;
+    }
+
+    .image_container_header_pic {
+        height: 270px;
+    }
+}
+
+/*iMac:*/
+@media (min-width: 1025px) and (max-width: 1500px) {
+    
 }
