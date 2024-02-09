@@ -2,13 +2,13 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 700px; 
+    height: 900px; 
 }
 
 .headerPic {
     position: relative;
     width: 100%;
-    bottom: 100px; 
+    bottom: 230px; 
     left: 0;
     z-index: -1;
     pointer-events: none;
@@ -16,10 +16,10 @@
 
 @media (max-width: 1024px) { 
     .image_container_header_pic {
-        height: 600px;
+        height: 700px;
     }
     .headerPic {
-        bottom: 75px; 
+        bottom: 230px; 
     }
 }
 
@@ -28,7 +28,7 @@
         height: 400px;
     }
     .headerPic {
-        bottom: 50px; 
+        bottom: 230px; 
     }
 }
 
@@ -37,7 +37,7 @@
         height: 300px;
     }
     .headerPic {
-        bottom: 25px; 
+        bottom: 230px; 
     }
 }
 
@@ -46,6 +46,6 @@
         height: 200px;
     }
     .headerPic {
-        bottom: 0; 
+        bottom: 230px; 
     }
 }

@@ -24,3 +24,7 @@
   display: flex;
   justify-content: center; 
 }
+
+.historie_pic {
+  width: 100%;
+}

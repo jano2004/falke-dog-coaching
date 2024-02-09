@@ -48,7 +48,6 @@
     bottom: 0;
 }
 
-
 .info-box p {
     margin: 0;
     font-size: 1.8rem;
@@ -58,4 +57,44 @@
     margin: auto;
     text-align: left;
     width: 70%;
+}
+
+@media (max-width: 480px) {
+    .info-box p {
+        margin: 0;
+        font-size: 1.1rem;
+        width: 120%;
+        margin-top: 20px;
+    }
+
+    .info-box h1 {
+        margin: 0;
+        font-size: 1.6rem;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .info-box p {
+        margin: 0;
+        font-size: 1.1rem;
+        width: 120%;
+        margin-top: 20px;
+    }
+
+    .info-box h1 {
+        margin: 0;
+        font-size: 1.6rem;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+
 }
