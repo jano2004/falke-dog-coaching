@@ -31,6 +31,15 @@
             }
         </script>
 
+        <div onclick="scrollToElementRefernzen()" class="nav-item"><a class="nav-link">PHYLOSOPHIE</a></div>
+        <script>
+            function scrollToElementRefernzen() {
+                document.getElementById("phylosophie").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
         <div onclick="scrollToElementLeistung()" class="nav-item"><a class="nav-link">LEISTUNGEN</a></div>
         <script>
             function scrollToElementLeistung() {
@@ -57,14 +66,6 @@
                 });
             }
         </script>
-        <div onclick="scrollToElementRefernzen()" class="nav-item"><a class="nav-link">REFERENZEN</a></div>
-        <script>
-            function scrollToElementRefernzen() {
-                document.getElementById("referenzen").scrollIntoView({
-                    behavior: 'smooth' 
-                });
-            }
-        </script>
 
     </header>
     <main class="main">
@@ -83,18 +84,18 @@
             <div class="home-text">
                 <div class="home_text_container">
                     <p class="home_main_text">
-                        Sie suchen ein exakt auf Sie und Ihren Hund zugeschnittenes Trainingsprogramm? Ihr Vierbeiner ist Ihr Arbeitskollege und Sie benötigen eine spezielle Ausbildung? Sie möchten den Hundeführerschein machen oder brauchen eine Wesensüberprüfung für Ihren Hund? Ihr Vierbeiner stellt Sie vor eine spezielle Herausforderung? 
-                        <span id="moreLink" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="showMoreText()"><br><br>Mehr anzeigen...</span>
+                        Sie suchen ein exakt auf Sie und Ihren Hund zugeschnittenes Trainingsprogramm? Ihr Vierbeiner ist Ihr Arbeitskollege und Sie benötigen eine spezielle Ausbildung? Sie möchten den Hundeführerschein machen oder brauchen eine Verhaltensüberprüfung für Ihren Hund? Ihr Vierbeiner stellt Sie vor eine spezielle Herausforderung? Sie möchten Ihn verstehen?
+                        <span id="moreLink" style="color: rgb(135, 135, 135); cursor: pointer;" onclick="showMoreText()"><br><br>Mehr anzeigen...</span>
                         <span id="moreText" style="display: none;">
                             <br><br>
                             Dann sind Sie bei mir genau richtig! Ich arbeite mit Ihnen gemeinsam am Aufbau von gegenseitigem Verständnis und Vertrauen – basierend auf neuesten wissenschaftlichen Erkenntnissen, meiner jahrelangen Erfahrung und meiner Leidenschaft für Hunde. Dabei berücksichtige ich sowohl die Natur des Hundes als auch Ihre persönlichen Wünsche und Ziele!<br><br>
                             Erfahren Sie hier mehr über meine <a class="leistungen_in_text" onclick="scrollToElementLeistung()"><u>Leistungen</u></a>.
                             <br><br>Sie haben Interesse oder noch Rückfragen?<br>
-                            Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund!
+                            Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund! <!-- Kontaktiere wird zu CTA-Button, verlinkung auf Kontakt-->
                             <br><br>
                             Ihre Jennifer Falke
                             <br><br>
-                            <span id="lessLink" style="color: rgb(89, 89, 170); cursor: pointer; display: none;" onclick="showLessText()">Weniger anzeigen...</span>
+                            <span id="lessLink" style="color: rgb(135, 135, 135); cursor: pointer; display: none;" onclick="showLessText()">Weniger anzeigen...</span>
                         </span>
                     </p>
                 </div>                       
@@ -125,11 +126,11 @@
         <img src="pictures/underHeaderPic.png" alt="" class="pic_c1">
         <div class="info-box">
             <div class="info_box_header">
-                <h1 class="header_mein_hundetraining">MEHR ALS HUNDETRAINING</h1>
+                <h1 class="header_mein_hundetraining">PHILOSOPHIE</h1>
             </div>
             <p class="phylosophie_text">
                 Gemeinsames Lernen für eine vertrauensvolle Partnerschaft zwischen Mensch und Hund benötigt mehr als stringentes Lernen von Grundübungen. <br><br>Wie jedes Lebewesen ist auch jeder Hund individuell, hat unterschiedliche Charakterzüge, Prägungen, Interessen und Ängste. Die Konstitution unserer Hunde ist abhängig von seinen bisherigen Erfahrungen und dem Erbe, das seine jeweiligen Vorfahren ihm mit auf den Weg gegeben haben.
-                <span id="moreLink2" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleTextContent()"><br><br>Mehr anzeigen...</span>
+                <span id="moreLink2" style="color: rgb(144, 144, 144); cursor: pointer;" onclick="toggleTextContent()"><br><br>Mehr anzeigen...</span>
                 <span id="hiddenText" style="display: none;">
                     Deswegen reagieren unsere Hunde genauso wie wir Menschen auf bestimmte Situationen mit unterschiedlichen Reaktionen.<br><br>
                     Um erfolgreich zu sein gilt es, die positiven Eigenschaften des Hundes hervorzuheben, zu nutzen, auszubauen und negative Eigenschaften möglichst auszugleichen. 
@@ -139,11 +140,10 @@
                     Deshalb beginnt das Training bei „Falke Dog Coaching“ grundsätzlich mit Individualstunden.<br><br> 
                     Mein Ziel ist es, Ihnen ohne jeglichen Leistungsdruck eine entspannte und freudige Zusammenarbeit mit Ihrem Hund zu ermöglichen, die Sie gemeinsam an Ihr gewünschtes Ziel bringt.
                     <br><br>
-                    <span style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleTextContent(true)">Weniger anzeigen...</span>
+                    <span style="color: rgb(144, 144, 144); cursor: pointer;" onclick="toggleTextContent(true)">Weniger anzeigen...</span>
                 </span>
             </p>
-        </div>
-        
+        </div> 
         <script>
             function toggleTextContent(less = false) {
                 var hiddenText = document.getElementById("hiddenText");
@@ -157,20 +157,20 @@
                     moreLink2.style.display = "none";
                 }
             }
-        </script>
-        
-        <p class="para_c1_line" id="leistungen"></p>
+        </script> 
         <section class="section">
-            <p class="para_c1_line_small_window" id="leistungen"></p>                   
+            <div class="mein_coaching_header" id="leistungen">
+                <h1 class="header_mein_coaching_header">MEIN COACHING</h1>
+            </div>
             <div class="block">
                 <h2 class="block-title">KLASSISCHES HUNDETRAINING</h2>
                 <div class="content-container">
                     <div class="text_and_list">
-                        <p class="block-text">Alles rund um das Leben mit Hund im Alltag. So werden Sie zu einem guten!</p>
+                        <p class="block-text">Alles rund um das Leben mit Hund im Alltag. So werden Sie zu einem guten Team!</p>
                         <ul class="block-list">
-                            <li>Grundkommandos</li>
+                            <li>Lernbiologie</li>
+                            <li>Ausdrucksverhalten</li>
                             <li>Welpenförderung und -sozialisierung</li>
-                            <li>Lernverhalten, Psychologie des Hundes</li>
                             <li>Aufbau des Vertrauensverhältnisses</li>
                             <li>Souveräne Führung</li>
                             <li>Alltagssituationen meistern</li>
@@ -185,6 +185,27 @@
             </div> 
             <p class="para_c1_line_small_window"></p>                                  
             <div class="block">
+                <h2 class="block-title">VERHALTENSBERATUNG / -THERAPIE</h2>
+                <div class="content-container">
+                    <div class="text_and_list">
+                        <p class="block-text">Ihr Hund stellt Sie vor eine besondere Herausforderung? Sie möchten unerwünschtes
+                            Verhalten verstehen und korrigieren? Dann profitieren Sie von meiner umfangreichen
+                            Erfahrung im Umgang mit außergewöhnlichen Situationen rund um den Hund.</p>
+                        <ul class="block-list">
+                            <li>Analyse von Angstverhalten und Aggression</li>
+                            <li>Krisenintervention</li>
+                            <li>Pathologische / medizinische Teilaspekte</li>
+                            <li>Individuelle Problemberatung</li>
+                        </ul>
+                    </div>
+                    <ul class="image-button-container">
+                        <img src="pictures/sectionC5Pic.png" alt="Beschreibung des Bildes" class="block-image">
+                        <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
+                    </ul>
+                </div>
+            </div>
+            <p class="para_c1_line_small_window"></p>                                  
+            <div class="block">
                 <h2 class="block-title">TEAM-ARBEIT / ANLAGEFÖRDERUNG</h2>
                 <div class="content-container">
                     <div class="text_and_list">
@@ -194,6 +215,7 @@
                             <li>Team-Arbeit</li>
                             <li>Man-Trailing</li>
                             <li>Fährtensuche</li>
+                            <li>Zielobjektsuche (ZOS)</li>
                         </ul>
                     </div>
                     <ul class="image-button-container">
@@ -217,14 +239,22 @@
             </div>
             <p class="para_c1_line_small_window"></p>                   
             <div class="block">
-                <h2 class="block-title">WORKSHOPS / SONSTIGES</h2>
+                <h2 class="block-title">WORKSHOPS, SEMINARE & SONSTIGES</h2>
                 <div class="content-container">
-                    <ul class="block-only-text">
-                        <p class="block-list-text">Sie möchten mehr über Hunde wissen? Oder benötigen eine individuelle Beratung
-                                                    vor der Anschaffung Ihres Hundes? Sie benötigen die erforderliche
-                                                    Erlaubnis zum Halten von großen Hunden oder Hunden bestimmter
-                                                    Rassen. Dann kontaktieren Sie mich!</p>
-                    </ul>
+                    <div class="text_and_list">
+                        <p class="block-text">Sie möchten mehr über Hunde wissen? Oder benötigen eine individuelle Beratung vor der
+                            Anschaffung Ihres Hundes? Sie benötigen die erforderliche Erlaubnis zum Halten von
+                            großen Hunden oder Hunden bestimmter Rassen. Dann kontaktieren Sie mich!</p>
+                        <ul class="block-list">                            
+                            <li>Beratung vor der Anschaffung</li>
+                            <li>Welpen-Wesenstest</li>
+                            <li>Verahaltensüberprüfungen gem. § 10 Abs. 2 LHundG NRW</li>
+                            <li>Sachkundenachweise gem. §§ 10 Abs. 3, 11 Abs. 2 LHundG NRW</li>
+                            <li>Themenspezifische Vorträge &amp; Seminare: Sie suchen eine Referentin oder möchten
+                                wissen wo und wann Sie Vorträgen oder Seminaren beiwohnen können, dann fragen
+                                Sie gerne an.</li>
+                        </ul>
+                    </div>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC4Pic.png" alt="Beschreibung des Bildes" class="block-image">
                         <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
@@ -275,7 +305,7 @@
             <h2 class="historie_text">HISTORIE</h2>
             <p class="historie_main_text">
                 Die Leidenschaft von Hunden umgeben zu sein, mich mit Ihnen auseinander zu setzen und sie zu verstehen begann bereits sehr früh. Nachdem ich sämtliche Nachbarshunde ausführte, mich Stunden lang mit Hundebüchern beschäftigte, begann ich mit 10 Jahren ehrenamtlich Tierheimhunde auszuführen. Mit 12 Jahren war es dann endlich soweit, meine erste Hündin durfte mit nach Hause. Sie begleitete mich ganze 16 Jahre!
-                <span id="moreLinkHistorie" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleHistorieText(false)"><br><br>Mehr anzeigen...</span>
+                <span id="moreLinkHistorie" style="color: rgb(135, 135, 135); cursor: pointer;" onclick="toggleHistorieText(false)"><br><br>Mehr anzeigen...</span>
                 <span id="hiddenHistorieText" style="display: none;">
                     Der Wolf als Vorfahre des Hundes interessiert mich besonders, da in jedem Haushund seine Gene enthalten sind. Jedoch ist die Wesensdistanz zwischen beiden recht groß. Um den wölfischen Aspekten unserer modernen Hunde näherzukommen, entschied ich mich, den Straßenhund zu erforschen.
                     <br><br>
@@ -289,9 +319,14 @@
                     <br><br>
                     2018 erweiterte ich mein Portfolio in dem ich die Prüfung für Sachverständige beim LANUV NRW ablegte. Hierdurch bin ich dazu berechtigt Verhaltensüberprüfungen für Hunde bestimmter Rassen durchzuführen und den Sachkundenachweis abzunehmen.
                     <br><br>
-                    Im Jahr 2021 schrieb ich meine Diplomarbeit zum Thema „Bestrafung von Diensthunden in der Diensthundeausbildung“. Aufbauend auf meinen Erkenntnissen aus dieser Forschung schreibe ich heute an meiner Doktorarbeit zu diesem und weiteren Themen rund um das Thema Diensthundewesen.
+                    Im Jahr 2021 schrieb ich meine Diplomarbeit zum Thema „Bestrafung von Diensthunden in
+                    der Diensthundeausbildung“. Aufbauend auf meinen daraus gewonnenen Erkenntnissen,
+                    forsche ich heute im Rahmen meiner Doktorarbeit tiefergehend an den verschiedenen
+                    Ausbildungsmethoden, deren Auswirkungen auf den Hund und seinen Einsatzwert.
                     <br><br>
                     Seit 2023 bin ich Teil der Mammalia AG, welche durch Professor Dr. Udo Gansloßer geleitet wird.
+                    <br><br>
+                    Neben meiner wachsenden Praxis-Erfahrung sind stetige Fort-und Weiterbildungen für mich selbstverständlich.
                     <br><br>
                     <span style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleHistorieText(true)">Weniger anzeigen...</span>
                 </span>

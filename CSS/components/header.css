@@ -3,10 +3,10 @@
     justify-content: baseline;
     align-items: center;
     background-color: black;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 210px;
+    padding-right: 200px;
     padding-bottom: 30px;
-    height: 180px;
+    height: 160px;
     flex-wrap: wrap;
 }
 
@@ -50,6 +50,7 @@
 .logo-image {
     width: 230px;
     height: auto;
+    margin-top: -3%;
 }
 
 @media (max-width: 480px) {

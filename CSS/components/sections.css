@@ -12,6 +12,44 @@
     align-items: center; 
 }
 
+.mein_coaching_header {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -2%;
+}
+
+.header_mein_coaching_header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.header_mein_coaching_header::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: black;
+}
+
+
+.header_mein_coaching_header::before {
+    top: 0;
+}
+
+.header_mein_coaching_header::after {
+    bottom: 0;
+}
+
+.header_mein_coaching_header {
+    width:100%
+}
+
 .para_c1_line_small_window {
     visibility: hidden;
 }
@@ -30,16 +68,16 @@
 .block-title {
     margin: 0;
     padding: 10px 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
 }
 
 .block-text {
     text-align: left; 
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 10px 20px;
     font-weight: 100;
-    width: 60%; 
+    width: 65%; 
 }
 
 .block-only-text {
@@ -123,7 +161,8 @@
 }  
 
 .block-list-text {
-    margin: 5px;
+    margin-left: 15px;
+    font-size: 1.7rem;
 }
 
 .image-button-container {
