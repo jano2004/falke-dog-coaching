@@ -13,6 +13,7 @@
     padding: 20px;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-top: -2%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,18 @@
     z-index: 2; 
 }
 
-.header_mein_hundetraining {
+.info_box_header {
+    width: 100%;
+    text-align: center;
+}
+
+.info_box_header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.info_box_header {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: normal;
@@ -31,12 +43,12 @@
     padding: 20px;
 }
 
-.header_mein_hundetraining::before, .header_mein_hundetraining::after {
+.info_box_header h1::before, .info_box_header h1::after {
     content: '';
     position: absolute;
-    left: 0%;
-    right: 0%;
-    height: 1px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
     background-color: black;
 }
 

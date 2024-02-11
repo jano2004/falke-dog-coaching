@@ -88,8 +88,8 @@
                         <span id="moreText" style="display: none;">
                             <br><br>
                             Dann sind Sie bei mir genau richtig! Ich arbeite mit Ihnen gemeinsam am Aufbau von gegenseitigem Verständnis und Vertrauen – basierend auf neuesten wissenschaftlichen Erkenntnissen, meiner jahrelangen Erfahrung und meiner Leidenschaft für Hunde. Dabei berücksichtige ich sowohl die Natur des Hundes als auch Ihre persönlichen Wünsche und Ziele!<br><br>
-                            Erfahren Sie hier mehr über meine Leistungen.<br><br>
-                            Sie haben Interesse oder noch Rückfragen?<br>
+                            Erfahren Sie hier mehr über meine <a class="leistungen_in_text" onclick="scrollToElementLeistung()"><u>Leistungen</u></a>.
+                            <br><br>Sie haben Interesse oder noch Rückfragen?<br>
                             Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund!
                             <br><br>
                             Ihre Jennifer Falke
@@ -121,9 +121,12 @@
                 </script> 
             </div>
         </div> 
+        <p class="para_c1_line"></p>
         <img src="pictures/underHeaderPic.png" alt="" class="pic_c1">
         <div class="info-box">
-            <h1 class="header_mein_hundetraining">MEIN HUNDETRAINING</h1>
+            <div class="info_box_header">
+                <h1 class="header_mein_hundetraining">MEHR ALS HUNDETRAINING</h1>
+            </div>
             <p class="phylosophie_text">
                 Gemeinsames Lernen für eine vertrauensvolle Partnerschaft zwischen Mensch und Hund benötigt mehr als stringentes Lernen von Grundübungen. <br><br>Wie jedes Lebewesen ist auch jeder Hund individuell, hat unterschiedliche Charakterzüge, Prägungen, Interessen und Ängste. Die Konstitution unserer Hunde ist abhängig von seinen bisherigen Erfahrungen und dem Erbe, das seine jeweiligen Vorfahren ihm mit auf den Weg gegeben haben.
                 <span id="moreLink2" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleTextContent()"><br><br>Mehr anzeigen...</span>
@@ -176,7 +179,7 @@
                     </div>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC1Pic.png" alt="Beschreibung des Bildes" class="block-image">
-                        <button class="block-list-button">Preise und Kontakt</button>
+                        <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
                     </ul>
                 </div>
             </div> 
@@ -195,7 +198,7 @@
                     </div>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC2Pic.png" alt="Beschreibung des Bildes" class="block-image">
-                        <button class="block-list-button">Preise und Kontakt</button>
+                        <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
                     </ul>
                 </div>
             </div>
@@ -208,7 +211,7 @@
                     </ul>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC3Pic.png" alt="Beschreibung des Bildes" class="block-image">
-                        <button class="block-list-button">Preise und Kontakt</button>
+                        <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
                     </ul>
                 </div>
             </div>
@@ -224,7 +227,7 @@
                     </ul>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC4Pic.png" alt="Beschreibung des Bildes" class="block-image">
-                        <button class="block-list-button">Preise und Kontakt</button>
+                        <button class="block-list-button" onclick="scrollToElementPreise()">Preise und Kontakt</button>
                     </ul>
                 </div>
             </div>
@@ -236,33 +239,30 @@
                 <div class="content-container">
                     <img src="pictures/sectionCPricing.png" alt="Beschreibung des Bildes" class="block_pricing_image">
                     <ul class="training_type_list">
-                        <p><u>Einzeltraining:</u></p>
+                        <p>EINZELTRAINING</p>
                         <li>a 60 Minuten € 60.-</li>
                         <li>jede weitere halbe Stunde € 30.-</li>
                         <p></p>
-                        <p><u>Gruppentraining:</u></p>
-                        <p>(Auf Anfrage ab 3 Teilnehmer möglich)</p>
+                        <p>GRUPPENTRAINING</p>
+                        (Auf Anfrage ab 3 Teilnehmer möglich)
                         <li>a 60 Minuten € 20.-/Person</li>
                         <li>jede weitere halbe Stunde € 10.-/Person</li>
-                        <p><u>Sachkundeprüfung:</u></p>
+                        <p>SACHKUNDEPRÜFUNG</p>
                         <li>pro Test und pro Person € 40.-</li>
                         <p></p>
-                        <p><u>Verhaltensüberprüfungen:</u></p>
+                        <p>SACHKUNDEPRÜFUNG</p>
                         <li>Ca. 1.5 Stunden € 250.-</li>
                         <p></p>
-                        <li>Sminare & Workshops auf Anfrage</li>
+                        <li>Seminare & Workshops auf Anfrage</li>
                         <div class="leistungen_typ_container">
-                            <select name="leistungenType" id="leistungenType">
-                                <option value="leistungen">LEISTUNGEN</option>
-                                <option value="klassisch">Klassisches Hundetraining</option>
-                                <option value="teamarbeit">Team-Arbeit und Anlageförderung</option>
-                                <option value="diensthund">Diensthundetraining</option>
-                                <option value="workshops">Workshops / Sonstiges</option>
-                            </select>
-                            <button onclick="sendEmailWithSelectedLeistungsType()" class="leistungen_type_button">ABSENDEN</button>
-                            <script src="Scripts/sendEmailFunktion.js"></script>
+                            <button onclick="sendToFormular()" class="leistungen_type_button">Hier zum Formular</button>
                         </div>                   
                     </ul>
+                </div>
+                <div class="anfahrt_mwst">
+                    <p>Anfahrtsgebühren bis zu 5 km sind inklusive, jeder weitere Kilometer wird mit € 1,- berechnet.</p>
+                    <p></p>
+                    <p>Alle Preise verstehen sich inklusive der gesetzlichen MwSt.</p>
                 </div>
             </div>
         </section>
@@ -270,29 +270,48 @@
         <div class="historie_pic_container">
             <img src="pictures/historiePic.png" alt="historie picture load" class="historie_pic">
         </div>
+        <p class="para_c1_line"></p>
         <div class="historie_text_container">
-          <p class="para_c1_line" id="historie"></p>
-          <h2 class="historie_text">HISTORIE</h2>
-          <p class="historie_main_text">Die Leidenschaft von Hunden umgeben zu sein, mich mit Ihnen auseinander zu setzen und sie zu verstehen begann bereits sehr früh.
-            Nachdem ich sämtliche Nachbarshunde ausführte, mich Stunden lang mit Hundebüchern beschäftigte, begann ich mit 10 Jahren ehrenamtlich Tierheimhunde auszuführen.
-            Mit 12 Jahren war es dann endlich soweit, meine erste Hündin durfte mit nach Hause.
-            Sie begleitete mich ganze 16 Jahre!<br><br>
-            Der Wolf als Vorfahre des Hundes interessiert mich besonders, da in jedem Haushund seine Gene enthalten sind.
-            Jedoch ist die Wesensdistanz zwischen beiden recht groß.
-            Um den wölfischen Aspekten unserer modernen Hunde näherzukommen, entschied ich mich, den Straßenhund zu erforschen.<br><br>
-            Hierfür reiste ich 2007 für ein Jahr nach Russland, da die Population der freilebenden Hunde dort besonders groß ist.
-            Die dabei gewonnenen Erfahrungen sind mir bei meiner Arbeit eine große Hilfe.<br><br>
-            Nach meiner Rückkehr beschloss ich, auf meinen dortigen Beobachtungen aufzubauen und begann meine Ausbildung als Hunde-Coach und Verhaltensberaterin bei „Kennel 101“ 
-            (Ausbildungszentrum für Sprengstoffspür- und Diensthunde sowie Hundepension und Zuchtstätte) Das Wissen meines Mentors bei „Kennel 101“ basiert auf einer 25-jährigen erfolgreichen 
-            Arbeit auf internationaler Ebene. <br><br>Während meiner Ausbildung erhielt ich den Sachkundenachweis gem. § 11 Abs. 2 TierSchG durch eine persönliche Prüfung des Veterinäramtes. Seit April 2010 
-            arbeite ich als selbstständige Hundeausbilderin und Verhaltensberaterin. <br><br>Im Dezember 2014 erhielt ich die nach neuesten Gesetzen erforderliche Zertifizierung gem. § 11 Abs. 1 Nr. 8 f 
-            TierSchG. <br><br>Im Jahre 2016 wurde diese um den § 11 Abs. 1 Nr. 6 TierSchG erweitert. Um mir rund um das Thema Tier &amp; Natur noch mehr fundiertes Wissen anzueignen, machte ich 2014 darüber
-            hinaus den Jagdschein. <br><br>2018 erweiterte ich mein Portfolio in dem ich die Prüfung für Sachverständige beim LANUV NRW ablegte. Hierdurch bin ich dazu berechtigt Verhaltensüberprüfungen für 
-            Hunde bestimmter Rassen durchzuführen und den Sachkundenachweis abzunehmen. <br><br>Im Jahr 2021 schrieb ich meine Diplomarbeit zum Thema „Bestrafung von Diensthunden in der Diensthundeausbildung“. 
-            Aufbauend auf meinen Erkenntnissen aus dieser Forschung schreibe ich heute an meiner Doktorarbeit zu diesem und weiteren Themen rund um das Thema Diensthundewesen. <br><br>Seit 2023 bin ich Teil der 
-            Mammalia AG, welche durch Professor Dr. Udo Gansloßer geleitet wird.</p></div>
-            <p class="para_c1_line"></p>
+            <h2 class="historie_text">HISTORIE</h2>
+            <p class="historie_main_text">
+                Die Leidenschaft von Hunden umgeben zu sein, mich mit Ihnen auseinander zu setzen und sie zu verstehen begann bereits sehr früh. Nachdem ich sämtliche Nachbarshunde ausführte, mich Stunden lang mit Hundebüchern beschäftigte, begann ich mit 10 Jahren ehrenamtlich Tierheimhunde auszuführen. Mit 12 Jahren war es dann endlich soweit, meine erste Hündin durfte mit nach Hause. Sie begleitete mich ganze 16 Jahre!
+                <span id="moreLinkHistorie" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleHistorieText(false)"><br><br>Mehr anzeigen...</span>
+                <span id="hiddenHistorieText" style="display: none;">
+                    Der Wolf als Vorfahre des Hundes interessiert mich besonders, da in jedem Haushund seine Gene enthalten sind. Jedoch ist die Wesensdistanz zwischen beiden recht groß. Um den wölfischen Aspekten unserer modernen Hunde näherzukommen, entschied ich mich, den Straßenhund zu erforschen.
+                    <br><br>
+                    Hierfür reiste ich 2007 für ein Jahr nach Russland, da die Population der freilebenden Hunde dort besonders groß ist. Die dabei gewonnenen Erfahrungen sind mir bei meiner Arbeit eine große Hilfe.
+                    <br><br>
+                    Nach meiner Rückkehr beschloss ich, auf meinen dortigen Beobachtungen aufzubauen und begann meine Ausbildung als Hunde-Coach und Verhaltensberaterin bei „Kennel 101“ (Ausbildungszentrum für Sprengstoffspür- und Diensthunde sowie Hundepension und Zuchtstätte). Das Wissen meines Mentors bei „Kennel 101“ basiert auf einer 25-jährigen erfolgreichen Arbeit auf internationaler Ebene.
+                    <br><br>
+                    Während meiner Ausbildung erhielt ich den Sachkundenachweis gem. § 11 Abs. 2 TierSchG durch eine persönliche Prüfung des Veterinäramtes. Seit April 2010 arbeite ich als selbstständige Hundeausbilderin und Verhaltensberaterin.
+                    <br><br>
+                    Im Dezember 2014 erhielt ich die nach neuesten Gesetzen erforderliche Zertifizierung gem. § 11 Abs. 1 Nr. 8 f TierSchG. Im Jahre 2016 wurde diese um den § 11 Abs. 1 Nr. 6 TierSchG erweitert. Um mir rund um das Thema Tier & Natur noch mehr fundiertes Wissen anzueignen, machte ich 2014 darüber hinaus den Jagdschein.
+                    <br><br>
+                    2018 erweiterte ich mein Portfolio in dem ich die Prüfung für Sachverständige beim LANUV NRW ablegte. Hierdurch bin ich dazu berechtigt Verhaltensüberprüfungen für Hunde bestimmter Rassen durchzuführen und den Sachkundenachweis abzunehmen.
+                    <br><br>
+                    Im Jahr 2021 schrieb ich meine Diplomarbeit zum Thema „Bestrafung von Diensthunden in der Diensthundeausbildung“. Aufbauend auf meinen Erkenntnissen aus dieser Forschung schreibe ich heute an meiner Doktorarbeit zu diesem und weiteren Themen rund um das Thema Diensthundewesen.
+                    <br><br>
+                    Seit 2023 bin ich Teil der Mammalia AG, welche durch Professor Dr. Udo Gansloßer geleitet wird.
+                    <br><br>
+                    <span style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleHistorieText(true)">Weniger anzeigen...</span>
+                </span>
+            </p>
         </div>
+        <script>
+            function toggleHistorieText(hide) {
+                var hiddenText = document.getElementById("hiddenHistorieText");
+                var moreLinkHistorie = document.getElementById("moreLinkHistorie");
+        
+                if (hide) {
+                    hiddenText.style.display = "none";
+                    moreLinkHistorie.style.display = "inline";
+                } else {
+                    hiddenText.style.display = "inline";
+                    moreLinkHistorie.style.display = "none";
+                }
+            }
+        </script>
+        <p class="para_c1_line"></p>
     </main>
     <footer class="footer">
         <div class="icon-and-contact-container">
