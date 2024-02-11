@@ -19,7 +19,7 @@
 <body>
     <header class="header">
         <div class="logo-container">
-            <img src="pictures/logo.jpg" alt="Falke Dog Coaching Logo" class="logo-image">
+            <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="logo-image">
         </div>
 
         <div onclick="scrollToElementHome()" class="nav-item"><a class="nav-link">HOME</a></div>
@@ -82,61 +82,98 @@
             <p class="para_c1">INDIVIDUELLES COACHING FÜR MENSCH UND HUND</p>
             <div class="home-text">
                 <div class="home_text_container">
-                    <p class="home_main_text">Sie suchen ein exakt auf Sie und Ihren Hund zugeschnittenes Trainingsprogramm?
-                    Ihr Vierbeiner ist Ihr Arbeitskollege und Sie benötigen eine spezielle Ausbildung?
-                    Sie möchten den Hundeführerschein machen oder brauchen eine Wesensüberprüfung für Ihren Hund?
-                    Ihr Vierbeiner stellt Sie vor eine spezielle Herausforderung?<br><br>
-                    Dann sind Sie bei mir genau richtig!
-                    Ich arbeite mit Ihnen gemeinsam am Aufbau von gegenseitigem Verständnis und Vertrauen – basierend auf neuesten wissenschaftlichen Erkenntnissen, meiner jahrelangen Erfahrung und meiner Leidenschaft für Hunde.
-                    Dabei berücksichtige ich sowohl die Natur des Hundes als auch Ihre persönlichen Wünsche und Ziele!<br><br>
-                    Erfahren Sie hier mehr über meine Leistungen.<br><br>
-                    Sie haben Interesse oder noch Rückfragen?<br>
-                    Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund!
-                    <br><br>
-                    Ihre Jennifer Falke</p>
-                    <p class="para_c1_line" id="home"></p>
-                </div>
+                    <p class="home_main_text">
+                        Sie suchen ein exakt auf Sie und Ihren Hund zugeschnittenes Trainingsprogramm? Ihr Vierbeiner ist Ihr Arbeitskollege und Sie benötigen eine spezielle Ausbildung? Sie möchten den Hundeführerschein machen oder brauchen eine Wesensüberprüfung für Ihren Hund? Ihr Vierbeiner stellt Sie vor eine spezielle Herausforderung? 
+                        <span id="moreLink" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="showMoreText()"><br><br>Mehr anzeigen...</span>
+                        <span id="moreText" style="display: none;">
+                            <br><br>
+                            Dann sind Sie bei mir genau richtig! Ich arbeite mit Ihnen gemeinsam am Aufbau von gegenseitigem Verständnis und Vertrauen – basierend auf neuesten wissenschaftlichen Erkenntnissen, meiner jahrelangen Erfahrung und meiner Leidenschaft für Hunde. Dabei berücksichtige ich sowohl die Natur des Hundes als auch Ihre persönlichen Wünsche und Ziele!<br><br>
+                            Erfahren Sie hier mehr über meine Leistungen.<br><br>
+                            Sie haben Interesse oder noch Rückfragen?<br>
+                            Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund!
+                            <br><br>
+                            Ihre Jennifer Falke
+                            <br><br>
+                            <span id="lessLink" style="color: rgb(89, 89, 170); cursor: pointer; display: none;" onclick="showLessText()">Weniger anzeigen...</span>
+                        </span>
+                    </p>
+                </div>                       
+                <script>
+                    function showMoreText() {
+                        var moreText = document.getElementById("moreText");
+                        var moreLink = document.getElementById("moreLink");
+                        var lessLink = document.getElementById("lessLink");
+
+                        moreText.style.display = "inline";
+                        moreLink.style.display = "none";
+                        lessLink.style.display = "inline"; 
+                    }
+
+                    function showLessText() {
+                        var moreText = document.getElementById("moreText");
+                        var moreLink = document.getElementById("moreLink");
+                        var lessLink = document.getElementById("lessLink");
+
+                        moreText.style.display = "none";
+                        moreLink.style.display = "inline"; 
+                        lessLink.style.display = "none"; 
+                    }
+                </script> 
             </div>
         </div> 
         <img src="pictures/underHeaderPic.png" alt="" class="pic_c1">
-        <div class="info-box"> 
+        <div class="info-box">
             <h1 class="header_mein_hundetraining">MEIN HUNDETRAINING</h1>
-            <p class="phylosophie_text">Wie jedes Lebewesen ist auch jeder Hund individuell, hat unterschiedliche Charakterzüge,
-                Prägungen, Interessen und Ängste. <br><br>Die Konstellation unserer Hunde ist abhängig von seinen
-                bisherigen Erfahrungen und dem Erbe, welches seine jeweiligen Vorfahren ihm mit auf den
-                Weg gegeben haben.<br><br>Deswegen reagieren unsere Hunde genauso wie wir Menschen auf
-                bestimmte Situationen mit unterschiedlichen Reaktionen.<br><br>
-                Um erfolgreich zu sein gilt es, die positiven Eigenschaften des Hundes hervorzuheben, zu
-                nutzen, auszubauen und negative Eigenschaften möglichst auszugleichen.<br><br> Aus diesem
-                Grund erarbeite ich mit Ihnen gemeinsam ein auf den einzelnen Hund zugeschnittenes
-                Trainingsmodell, das aus unterschiedlichen Elementen des Hunde-Coachings
-                zusammengestellt wird. Und auch Sie stehen bei mir im Vordergrund, da nur Sie durch das
-                Erlangen des Wissens und durch das Verständnis der Verhaltensweisen und
-                Kommunikationsarten Ihres Hundes eine Verständigung erreichen und das Tier erfolgreich
-                und auf einer artgerechten Ebene führen können.
-                Zu Beginn steht die Analyse Ihres Begleiters. <br><br>Seine Anlagen, sowohl positiver wie negativer
-                Natur, müssen gründlich erkundet werden, um optimale Voraussetzungen zu schaffen.
-                <br><br>Deshalb beginnt das Training bei „Falke Dog Coaching“ grundsätzlich mit Individualstunden.
-                <br><br>Mein Ziel ist es, Ihnen ohne jeglichen Leistungsdruck eine entspannte und freudige
-                Zusammenarbeit mit Ihrem Hund zu ermöglichen, die Sie gemeinsam an Ihr gewünschtes
-                Ziel bringt.</p>
-        </div>          
+            <p class="phylosophie_text">
+                Gemeinsames Lernen für eine vertrauensvolle Partnerschaft zwischen Mensch und Hund benötigt mehr als stringentes Lernen von Grundübungen. <br><br>Wie jedes Lebewesen ist auch jeder Hund individuell, hat unterschiedliche Charakterzüge, Prägungen, Interessen und Ängste. Die Konstitution unserer Hunde ist abhängig von seinen bisherigen Erfahrungen und dem Erbe, das seine jeweiligen Vorfahren ihm mit auf den Weg gegeben haben.
+                <span id="moreLink2" style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleTextContent()"><br><br>Mehr anzeigen...</span>
+                <span id="hiddenText" style="display: none;">
+                    Deswegen reagieren unsere Hunde genauso wie wir Menschen auf bestimmte Situationen mit unterschiedlichen Reaktionen.<br><br>
+                    Um erfolgreich zu sein gilt es, die positiven Eigenschaften des Hundes hervorzuheben, zu nutzen, auszubauen und negative Eigenschaften möglichst auszugleichen. 
+                    Aus diesem Grund erarbeite ich mit Ihnen gemeinsam ein auf den einzelnen Hund zugeschnittenes Trainingsmodell, das aus unterschiedlichen Elementen des Hunde-Coachings zusammengestellt wird. 
+                    Und auch Sie stehen bei mir im Vordergrund, da nur Sie durch das Erlangen des Wissens und durch das Verständnis der Verhaltensweisen und Kommunikationsarten Ihres Hundes eine Verständigung erreichen und das Tier erfolgreich und auf einer artgerechten Ebene führen können.<br><br>
+                    Zu Beginn steht die Analyse Ihres Begleiters. Seine Anlagen, sowohl positiver wie negativer Natur, müssen gründlich erkundet sein, um optimale Voraussetzungen für die Wahl des richtigen Ausbildungsweges zu schaffen. 
+                    Deshalb beginnt das Training bei „Falke Dog Coaching“ grundsätzlich mit Individualstunden.<br><br> 
+                    Mein Ziel ist es, Ihnen ohne jeglichen Leistungsdruck eine entspannte und freudige Zusammenarbeit mit Ihrem Hund zu ermöglichen, die Sie gemeinsam an Ihr gewünschtes Ziel bringt.
+                    <br><br>
+                    <span style="color: rgb(89, 89, 170); cursor: pointer;" onclick="toggleTextContent(true)">Weniger anzeigen...</span>
+                </span>
+            </p>
+        </div>
+        
+        <script>
+            function toggleTextContent(less = false) {
+                var hiddenText = document.getElementById("hiddenText");
+                var moreLink2 = document.getElementById("moreLink2");
+        
+                if (less) {
+                    hiddenText.style.display = "none";
+                    moreLink2.style.display = "inline";
+                } else {
+                    hiddenText.style.display = "inline";
+                    moreLink2.style.display = "none";
+                }
+            }
+        </script>
+        
         <p class="para_c1_line" id="leistungen"></p>
         <section class="section">
             <p class="para_c1_line_small_window" id="leistungen"></p>                   
             <div class="block">
                 <h2 class="block-title">KLASSISCHES HUNDETRAINING</h2>
-                <p class="block-text">Alles rund um das Leben mit Hund im Alltag. So werden Sie zu einem guten!</p>
                 <div class="content-container">
-                    <ul class="block-list">
-                        <li>Grundkommandos</li>
-                        <li>Welpenförderung und -sozialisierung</li>
-                        <li>Lernverhalten, Psychologie des Hundes</li>
-                        <li>Aufbau des Vertrauensverhältnisses</li>
-                        <li>Souveräne Führung</li>
-                        <li>Alltagssituationen meistern</li>
-                        <li>Mehrhundehaltung</li>
-                    </ul>
+                    <div class="text_and_list">
+                        <p class="block-text">Alles rund um das Leben mit Hund im Alltag. So werden Sie zu einem guten!</p>
+                        <ul class="block-list">
+                            <li>Grundkommandos</li>
+                            <li>Welpenförderung und -sozialisierung</li>
+                            <li>Lernverhalten, Psychologie des Hundes</li>
+                            <li>Aufbau des Vertrauensverhältnisses</li>
+                            <li>Souveräne Führung</li>
+                            <li>Alltagssituationen meistern</li>
+                            <li>Mehrhundehaltung</li>
+                        </ul>
+                    </div>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC1Pic.png" alt="Beschreibung des Bildes" class="block-image">
                         <button class="block-list-button">Preise und Kontakt</button>
@@ -146,14 +183,16 @@
             <p class="para_c1_line_small_window"></p>                                  
             <div class="block">
                 <h2 class="block-title">TEAM-ARBEIT / ANLAGEFÖRDERUNG</h2>
-                <p class="block-text">Ist Ihr Hund ein Jäger? Oder ein echter Nasenprofi? Wir finden gemeinsam heraus, wo die Stärken Ihres Hundes liegen und wie Sie für eine optimale Auslastung sorgen können.</p>
                 <div class="content-container">
-                    <ul class="block-list">
-                        <li>Anlagenanalyse und –förderung</li>
-                        <li>Team-Arbeit</li>
-                        <li>Man-Trailing</li>
-                        <li>Fährtensuche</li>
-                    </ul>
+                    <div class="text_and_list">
+                        <p class="block-text">Ist Ihr Hund ein Jäger? Oder ein echter Nasenprofi? Wir finden gemeinsam heraus, wo die Stärken Ihres Hundes liegen und wie Sie für eine optimale Auslastung sorgen können.</p>
+                        <ul class="block-list">
+                            <li>Anlagenanalyse und –förderung</li>
+                            <li>Team-Arbeit</li>
+                            <li>Man-Trailing</li>
+                            <li>Fährtensuche</li>
+                        </ul>
+                    </div>
                     <ul class="image-button-container">
                         <img src="pictures/sectionC2Pic.png" alt="Beschreibung des Bildes" class="block-image">
                         <button class="block-list-button">Preise und Kontakt</button>
