@@ -285,8 +285,28 @@
                         <p></p>
                         <li>Seminare & Workshops auf Anfrage</li>
                         <div class="leistungen_typ_container">
-                            <button onclick="sendFormularToUser()" class="leistungen_type_button">Hier zum Formular</button>
+                            <button onclick="sendFormularToUser()" class="leistungen_type_button">Formular runterladen</button>
+                            <script>
+                                function sendFormularToUser() {
+                                    var element = document.createElement('a');                               
+                                    element.setAttribute('href', 'Files/Anmeldebogen.pdf');                               
+                                    element.setAttribute('download', 'Anmeldebogen.pdf');                               
+                                    element.style.display = 'none';
+                                    document.body.appendChild(element);
+                                    element.click();
+                                    document.body.removeChild(element);
+                                }
+                            </script>
                             <button onclick="sendFormularToEmail()" class="leistungen_type_button">Formular hochladen</button>
+                            <script>
+                                function sendFormularToEmail() {
+                                    var email = 'beispiel@domain.com'; 
+                                    var subject = encodeURIComponent('Ausgefülltes Formular von: ');
+                                    var body = encodeURIComponent('Hiermit sende ich, Jennifer Falke mein ausgefülltes Formular.\n \nBitte Datei anfügen! \nTragen Sie Ihren Namen im Betreff ein!');
+                                    var mailtoLink = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+                                    window.location.href = mailtoLink;
+                                }
+                            </script>
                         </div>                   
                     </ul>
                 </div>
