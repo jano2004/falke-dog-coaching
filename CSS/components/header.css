@@ -1,5 +1,7 @@
-.small_header {
-    display: none;
+@media (min-width: 1301px) {
+    .small_header {
+        display: none;
+    }
 }
 
 .header {
