@@ -36,12 +36,12 @@
     }
 
     .small_header li {
-        padding: 4px 40px; 
+        padding: 10px 30px; 
         position: relative;
     }
 
     .small_header li::before {
-        content: '◦';
+        content: '';
         position: absolute;
         left: 15px;
     }
