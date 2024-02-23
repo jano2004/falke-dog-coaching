@@ -1,7 +1,5 @@
-@media (min-width: 1500px) {
-    .small_header {
-        display: none;
-    }
+.small_header {
+    display: none;
 }
 
 .header {
@@ -9,6 +7,8 @@
     justify-content: baseline;
     align-items: center;
     background-color: black;
+    padding-left: 210px;
+    padding-right: 200px;
     padding-bottom: 30px;
     height: 160px;
     flex-wrap: wrap;
@@ -55,4 +55,20 @@
     width: 230px;
     height: auto;
     margin-top: -3%;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+
 }

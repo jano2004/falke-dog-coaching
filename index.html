@@ -74,6 +74,8 @@
             <div class="small_header_background">
                 <div class="small_header_background_logo">
                     <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="small_header_background_logo_img">
+                    <img src="pictures/headerNavBarIcon.png" alt="NAVBAR" class="small_header_background_navbar_img" id="down">
+                    <img src="pictures/headerNavBarIconUp.png" alt="NAVBAR" class="small_header_background_navbar_img" id="up">
                 </div>
             </div>
             <div class="small_header_menu_container">
@@ -93,13 +95,38 @@
                     <li>
                         <a onclick="scrollToElementHistorie()" class="small_header_menu_historie">HISTORIE</a>
                     </li>
-                    <li>
-                        <button id="theme-toggle" class="small_header_menu_x">X</button>
-                    </li>
+                    <p></p>
                 </ul>
             </div>
         </nav>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const downIcon = document.getElementById('down');
+            const upIcon = document.getElementById('up');
+            const menu = document.querySelector('.small_header_menu');
+        
+            upIcon.style.display = 'none'; 
+        
+            const toggleMenu = () => {
+                if (menu.classList.contains('show')) {
+                    menu.classList.remove('show'); 
+                    upIcon.style.display = 'none'; 
+                    downIcon.style.display = 'block';
+                } else {
+                    menu.classList.add('show');
+                    upIcon.style.display = 'block';
+                    downIcon.style.display = 'none'; 
+                }
+            };
+        
+            // Event listeners
+            downIcon.addEventListener('click', toggleMenu);
+            upIcon.addEventListener('click', toggleMenu);
+        });
+        </script>
+        
+        
 
     <main class="main">
         <div class="image_container_header_pic">
@@ -125,7 +152,7 @@
                             Dann sind Sie bei mir genau richtig! Ich arbeite mit Ihnen gemeinsam am Aufbau von gegenseitigem Verständnis und Vertrauen – basierend auf neuesten wissenschaftlichen Erkenntnissen, meiner jahrelangen Erfahrung und meiner Leidenschaft für Hunde. Dabei berücksichtige ich sowohl die Natur des Hundes als auch Ihre persönlichen Wünsche und Ziele!<br><br>
                             Erfahren Sie hier mehr über meine <a class="leistungen_in_text" onclick="scrollToElementLeistung()"><u>Leistungen</u></a>.
                             <br><br>Sie haben Interesse oder noch Rückfragen?<br>
-                            Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund! <!-- Kontaktiere wird zu CTA-Button, verlinkung auf Kontakt-->
+                            Kontaktieren Sie mich gerne für ein unverbindliches Kennenlerngespräch. Ich freue mich auf Sie und Ihren Hund! 
                             <br><br>
                             Ihre Jennifer Falke
                             <br><br>
