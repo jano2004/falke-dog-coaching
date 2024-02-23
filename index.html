@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.7"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Falke Dog Coaching</title>
     <link rel="stylesheet" href="CSS/utils/styles.css">
     <link rel="stylesheet" href="CSS/components/header.css">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="CSS/components/footer.css">
     <link rel="stylesheet" href="CSS/components/sectionPricing.css">
     <link rel="stylesheet" href="CSS/components/infoBox.css">
+    <link rel="stylesheet" href="CSS/components/smallHeader.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +32,7 @@
             }
         </script>
 
-        <div onclick="scrollToElementRefernzen()" class="nav-item"><a class="nav-link">PHYLOSOPHIE</a></div>
+        <div onclick="scrollToElementRefernzen()" class="nav-item"><a class="nav-link">PHILOSOPHIE</a></div>
         <script>
             function scrollToElementRefernzen() {
                 document.getElementById("phylosophie").scrollIntoView({
@@ -40,7 +41,7 @@
             }
         </script>
 
-        <div onclick="scrollToElementLeistung()" class="nav-item"><a class="nav-link">LEISTUNGEN</a></div>
+        <div onclick="scrollToElementLeistung()" class="nav-item"><a class="nav-link">COACHING</a></div>
         <script>
             function scrollToElementLeistung() {
                 document.getElementById("leistungen").scrollIntoView({
@@ -66,8 +67,40 @@
                 });
             }
         </script>
-
     </header>
+
+    <div class="small_header">
+        <nav>
+            <div class="small_header_background">
+                <div class="small_header_background_logo">
+                    <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="small_header_background_logo_img">
+                </div>
+            </div>
+            <div class="small_header_menu_container">
+                <ul class="small_header_menu">
+                    <li>
+                        <a onclick="scrollToElementHome()" class="small_header_menu_home">HOME</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementRefernzen()" class="small_header_menu_philosophie">PHILOSOPHIE</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementLeistung()" class="small_header_menu_leistungen">COACHING</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementPreise()" class="small_header_menu_preise">PREISE</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementHistorie()" class="small_header_menu_historie">HISTORIE</a>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" class="small_header_menu_x">X</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <main class="main">
         <div class="image_container_header_pic">
             <img class="headerPic" id="headerPic" src="pictures/headerPicReframed.jpg">
@@ -79,6 +112,7 @@
                 });
             </script>                
         </div>
+        <p id="home"></p>
         <div class="container1">
             <p class="para_c1">INDIVIDUELLES COACHING FÜR MENSCH UND HUND</p>
             <div class="home-text">
@@ -124,7 +158,7 @@
         </div> 
         <p class="para_c1_line"></p>
         <img src="pictures/underHeaderPic.png" alt="" class="pic_c1">
-        <div class="info-box">
+        <div class="info-box" id="phylosophie">
             <div class="info_box_header">
                 <h1 class="header_mein_hundetraining">PHILOSOPHIE</h1>
             </div>
@@ -285,7 +319,7 @@
                         <p></p>
                         <li>Seminare & Workshops auf Anfrage</li>
                         <div class="leistungen_typ_container">
-                            <button onclick="sendFormularToUser()" class="leistungen_type_button">Formular runterladen</button>
+                            <button onclick="sendFormularToUser()" class="leistungen_type_button">Anmelden</button>
                             <script>
                                 function sendFormularToUser() {
                                     var element = document.createElement('a');                               
@@ -297,7 +331,7 @@
                                     document.body.removeChild(element);
                                 }
                             </script>
-                            <button onclick="sendFormularToEmail()" class="leistungen_type_button">Formular hochladen</button>
+                            <button onclick="sendFormularToEmail()" class="leistungen_type_button">Mail senden</button>
                             <script>
                                 function sendFormularToEmail() {
                                     var email = 'beispiel@domain.com'; 
@@ -321,7 +355,7 @@
         <div class="historie_pic_container">
             <img src="pictures/historiePic.png" alt="historie picture load" class="historie_pic">
         </div>
-        <p class="para_c1_line"></p>
+        <p class="para_c1_line" id="historie"></p>
         <div class="historie_text_container">
             <h2 class="historie_text">HISTORIE</h2>
             <p class="historie_main_text">
