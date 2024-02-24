@@ -1,4 +1,4 @@
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .header {
         display: none;
     }
@@ -101,6 +101,30 @@
     .small_header_background_navbar_img {
         height: 20px; 
         top: 50px; 
+    }
+}
+
+@media (max-width: 499px) {
+    .small_header_background {
+        width: 100%;
+        height: 90px;
+        background-color: black;
+    }
+
+    .small_header_background_logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .small_header_background_logo_img, 
+    .small_header_background_navbar_img {
+        height: 90px; 
+    }
+
+    .small_header_background_navbar_img {
+        height: 15px; 
+        top: 40px; 
     }
 }
 
