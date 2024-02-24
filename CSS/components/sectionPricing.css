@@ -10,6 +10,10 @@
     border-radius: 10px;
 }
 
+.header_mein_coaching_header {
+    font-weight: normal;
+}
+
 .training_type_list, .training_type_list_no_header {
     list-style-type: none;
     font-size: 1.8rem;
@@ -20,13 +24,6 @@
 
 .training_type_list li {
     position: relative;
-    padding-left: 20px;
-}
-
-.training_type_list li::before {
-    content: '- ';
-    position: absolute;
-    left: 0;
 }
 
 .training_type_list p {
@@ -46,7 +43,7 @@
 
 .block_title_pricing {
     text-align: center;
-    font-weight: normal;
+    font-weight: 100px;
 }
 
 .leistungen_typ_container {
@@ -90,21 +87,8 @@
         font-size: 0.8rem;
     }
 
-    .block_title_pricing::before, .block_title_pricing::after{
-        content: '';
-        position: absolute;
-        left: 10%;
-        right: 10%;
-        height: 1px;
-        background-color: black;
-    }
-
-    .block_title_pricing::before {
-        top: 0;
-    }
-    
-    .block_title_pricing::after {
-        bottom: 0;
+    .training_type_list {
+        margin-top: -40px;
     }
 
     .training_type_list p {

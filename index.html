@@ -105,7 +105,12 @@
             const downIcon = document.getElementById('down');
             const upIcon = document.getElementById('up');
             const menu = document.querySelector('.small_header_menu');
-        
+            const home = document.querySelector('.small_header_menu_home');
+            const philosophie = document.querySelector('.small_header_menu_philosophie');
+            const leistungen = document.querySelector('.small_header_menu_leistungen');
+            const preise = document.querySelector('.small_header_menu_preise');
+            const historie = document.querySelector('.small_header_menu_historie');
+
             upIcon.style.display = 'none'; 
         
             const toggleMenu = () => {
@@ -122,6 +127,11 @@
         
             downIcon.addEventListener('click', toggleMenu);
             upIcon.addEventListener('click', toggleMenu);
+            home.addEventListener('click', toggleMenu);
+            philosophie.addEventListener('click', toggleMenu);
+            leistungen.addEventListener('click', toggleMenu);
+            preise.addEventListener('click', toggleMenu);
+            historie.addEventListener('click', toggleMenu);
         });
     </script>
         
@@ -320,10 +330,9 @@
                 </div>
             </div>
         </section>
-        <p class="para_c1_line" id="preise"></p>
-        <section class="section_pricing">
+        <section class="section_pricing" id="preise">
             <div class="block_pricing"> 
-                <h2 class="block_title_pricing">PREISE UND KONTAKT</h2>
+                <h2 class="header_mein_coaching_header">PREISE UND KONTAKT</h2>
                 <div class="content-container">
                     <img src="pictures/sectionCPricing.png" alt="Beschreibung des Bildes" class="block_pricing_image">
                     <ul class="training_type_list">
@@ -370,7 +379,6 @@
                 </div>
                 <div class="anfahrt_mwst">
                     <p>Anfahrtsgebühren bis zu 5 km sind inklusive, jeder weitere Kilometer wird mit € 1,- berechnet.</p>
-                    <p></p>
                     <p>Alle Preise verstehen sich inklusive der gesetzlichen MwSt.</p>
                 </div>
             </div>
