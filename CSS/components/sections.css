@@ -168,6 +168,7 @@
         width: 90%;
         height: 40px;
         font-size: 1rem;
+        font-weight: normal;
     }
 
     .content-container {
@@ -178,7 +179,7 @@
     }
 
     .text_and_list {
-        width: 90%;
+        width: 80%;
     }
 
     .block-text {
