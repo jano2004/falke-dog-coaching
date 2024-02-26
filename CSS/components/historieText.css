@@ -23,6 +23,7 @@
 .historie_pic_container {
   display: flex;
   justify-content: center; 
+  margin-bottom: 20px;
 }
 
 .historie_pic {

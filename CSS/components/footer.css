@@ -80,6 +80,9 @@
     border: 0;
 }
 
+.footer_p {
+    color: white;
+}
 @media (max-width: 499px) {
     .footer {
         flex-direction: column;
