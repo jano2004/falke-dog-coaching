@@ -28,3 +28,9 @@
 .historie_pic {
   width: 100%;
 }
+
+@media (max-width: 499px) {
+  .historie_main_text {
+    font-size: 12px;
+  }
+}

@@ -4,15 +4,18 @@
     height: 400px;
     background-color: black;
     color: white;
-    justify-content: space-between;
 }
 
 .icon-and-contact {
     padding-left: 100px;
-    position: absolute;
+    position: relative;
     text-align: left;
     font-size: large;
     margin: auto;
+}
+
+.footer .logo-image {
+    padding-left: 47px;
 }
 
 .footer_para_c1_line {
@@ -24,10 +27,8 @@
 .footer_para_c1_line::after {
     content: '';
     position: absolute;
-    left: 10%;
-    right: 10%;
     height: 1px;
-    width: 300px;
+    width: 100%;
     background-color: white;
 }
 
@@ -67,7 +68,7 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 300px;
+    width: 100%;
     background-color: white;
 }
 
@@ -77,4 +78,52 @@
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 0;
+}
+
+@media (max-width: 499px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .footer .logo-image {
+        margin-top: 0;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 10%;
+        height: auto;
+    }
+    
+    .icon-and-contact {
+        position: relative;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .footer_p {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer_para_c1_line {
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 0%;
+    }
+
+    .contact-and-impressum-container {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .contact_button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .impressum_button {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
