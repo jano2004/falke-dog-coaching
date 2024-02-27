@@ -159,6 +159,10 @@
         font-size: 1rem;
     }
 
+    .image-button-container {
+        width: 100%;
+    }
+
     .block-image {
         width: 90%;
         height: auto;
