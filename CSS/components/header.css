@@ -30,7 +30,8 @@
     font-size: 1.4rem;
     text-decoration: none;
     color: white;
-    padding: 10px;
+    margin: 0px 30px 10px 30px;
+    padding-bottom: 10px;
     display: inline-block;
     position: relative;
     transition: color 0.3s;
