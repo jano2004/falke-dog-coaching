@@ -6,6 +6,7 @@
 
 .header {
     display: flex;
+    position: fixed;
     justify-content: baseline;
     align-items: center;
     background-color: black;
