@@ -130,3 +130,51 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+    }
+
+    .footer .logo-image {
+        margin-top: 0;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+        height: auto;
+    }
+    
+    .icon-and-contact {
+        position: relative;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .footer_p {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer_para_c1_line {
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 0%;
+    }
+
+    .contact-and-impressum-container {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .contact_button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .impressum_button {
+        text-align: center;
+        font-size: 1rem;
+    }
+}

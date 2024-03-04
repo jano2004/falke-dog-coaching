@@ -137,3 +137,9 @@
         margin-top: 12px;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .block_pricing_image {
+        display: none;
+    }
+}
