@@ -228,7 +228,7 @@
         </script> 
         <section class="section">
             <div class="info_box_header" id="leistungen">
-                <h1 class="header_mein_coaching_header">MEIN COACHING</h1>
+                <h1 class="header_mein_coaching_header">COACHING</h1>
             </div>
             <div class="block">
                 <h2 class="block-title">KLASSISCHES HUNDETRAINING</h2>
@@ -444,12 +444,18 @@
                 <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="logo-image">
                 <p class="footer_para_c1_line"></p>
                 <p class="footer_p">+49(0)157 735 136 94</p>
-                <p class="footer_p">info@falke-dog-coaching.de</p>
+                <p class="footer_p">j.falke@falke-dog-coaching.de</p>
             </ul>
         </div>
         <div class="contact-and-impressum-container">
             <ul class="contact-and-impressum">
-                <button class="contact_button">KONTAKT</button>
+                <button class="contact_button" onclick="openLink()">FACEBOOK</button>
+                <script>
+                    function openLink() {
+                        var url = "https://www.facebook.com/people/Falke-Dog-Coaching/100055664746097/";
+                        window.open(url, '_blank');
+                    }
+                </script>
                 <p class="footer_para_c1_line_contact_impressum"></p>
                 <button class="impressum_button">IMPRESSUM</button>
             </ul>

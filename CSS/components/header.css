@@ -6,7 +6,6 @@
 
 .header {
     display: flex;
-    position: fixed;
     justify-content: baseline;
     align-items: center;
     background-color: black;
@@ -28,7 +27,7 @@
 }
 
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: white;
     padding: 10px;

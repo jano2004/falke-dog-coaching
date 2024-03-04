@@ -8,7 +8,7 @@ html {
     width: 100%;
 }
 
-* {
+*:not(.header) {
   box-sizing: border-box;
 }
 
