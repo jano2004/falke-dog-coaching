@@ -60,6 +60,10 @@
     border: 0;
 }
 
+.contact_button:hover {
+    cursor: pointer;
+}
+
 .footer_para_c1_line_contact_impressum {
     position: relative;
 }
@@ -79,6 +83,10 @@
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 0;
+}
+
+.impressum_button:hover {
+    cursor: pointer;
 }
 
 .footer_p {
