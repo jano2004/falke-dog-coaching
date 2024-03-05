@@ -123,11 +123,22 @@
         height: 400px;
     }
     
-    .icon-and-contact, .footer_p, .footer_para_c1_line, .contact-and-impressum-container, .contact_button, .impressum_button {
+    .icon-and-contact, .footer_p, .footer_para_c1_line, .contact-and-impressum-container, .impressum_button {
         width: 100%; 
         text-align: center; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0; 
         margin: 0; 
+    }
+
+    .contact_button {
+        width: 80px;
+    }
+
+    .contact-and-impressum-container {
+        padding-right: 0;
     }
 
     .footer .logo-image-footer {
