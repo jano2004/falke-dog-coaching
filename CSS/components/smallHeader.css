@@ -55,6 +55,7 @@
         letter-spacing: 3px;
         text-decoration: none; 
         color: inherit; 
+        cursor: pointer;
     }
 
     .placeholder_mobile {

@@ -116,7 +116,7 @@
     border: 0;
 }
 
-.impressum_button:hover {
+.impressum_button:hover, .kontakt_button:hover {
     cursor: pointer;
 }
 
