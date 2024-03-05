@@ -17,14 +17,30 @@
     margin: auto;
 }
 
-.footer .logo-image {
+.footer .logo-image-footer {
     padding-left: 47px;
+}
+
+.icon-and-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-image-footer {
+    height: 200px;
+    width: auto;
+    margin-bottom: -40px;
+    padding-top: 0;
 }
 
 .footer_para_c1_line {
     margin: 20px;
-    position: relative;
-    padding: 20px;
+    padding-bottom: 10px;
 }
 
 .footer_para_c1_line::after {
@@ -52,7 +68,7 @@
     list-style: none; 
     display: flex;
     flex-direction: column; 
-    padding: 50px; 
+    padding-top: 90px; 
 }
 
 .contact_button {
@@ -111,7 +127,7 @@
         margin: 0; 
     }
 
-    .footer .logo-image {
+    .footer .logo-image-footer {
         width: 40%;
         text-align: center; 
         padding: 0; 
@@ -150,7 +166,7 @@
         height: 600px;
     }
 
-    .footer .logo-image {
+    .footer .logo-image-footer {
         margin-top: 0;
         width: 50%;
         padding-left: 25%;
