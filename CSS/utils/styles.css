@@ -6,7 +6,7 @@ body {
 
 html {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
+    max-width: 100%;
 }
 
 *:not(.header) {

@@ -93,50 +93,50 @@
     color: white;
 }
 @media (max-width: 499px) {
-    .footer {
-        flex-direction: column;
+    .footer_container {
+        display: flex;
         justify-content: center;
-        height: 500px;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+    }
+    
+    .icon-and-contact, .footer_p, .footer_para_c1_line, .contact-and-impressum-container, .contact_button, .impressum_button {
+        width: 100%; 
+        text-align: center; 
+        padding: 0; 
+        margin: 0; 
     }
 
     .footer .logo-image {
-        margin-top: 0;
-        width: 50%;
-        padding-left: 25%;
-        padding-top: 10%;
-        height: auto;
+        width: 40%;
+        text-align: center; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .contact-and-impressum-container button {
+        font-size: 1.5rem;
+        font-weight: 300;;
+    }
+
+    .footer_para_c1_line_contact_impressum {
+        display: none;
     }
     
-    .icon-and-contact {
-        position: relative;
-        padding-left: 0;
-        width: 100%;
+    .footer_para_c1_line {
+        display: none;
     }
 
     .footer_p {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .footer_para_c1_line {
-        margin-top: 0;
-        padding-top: 0;
-        padding-left: 0%;
+        color: white;
     }
 
     .contact-and-impressum-container {
+        display: flex;
         justify-content: center;
-        padding-top: 0;
-    }
-
-    .contact_button {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .impressum_button {
-        text-align: center;
-        font-size: 1rem;
+        align-items: center;
+        flex-direction: column; 
     }
 }
 
