@@ -56,6 +56,11 @@
         text-decoration: none; 
         color: inherit; 
     }
+
+    .placeholder_mobile {
+        display: flex;
+        height: 40px;
+    }
 }
 
 @media (max-width: 1300px), (min-width: 1000px) {
@@ -127,6 +132,11 @@
     .small_header_background_navbar_img {
         height: 15px; 
         top: 40px; 
+    }
+
+    .placeholder_mobile {
+        display: flex;
+        height: 40px;
     }
 }
 
