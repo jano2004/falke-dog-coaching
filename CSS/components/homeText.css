@@ -37,6 +37,7 @@
 
   .para_c1::before, .para_c1::after {
     height: 1px;
+    font-weight: 100;
   }
 
   .para_c1_line {
