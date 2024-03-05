@@ -11,6 +11,8 @@
 
 .icon-and-contact {
     padding-left: 100px;
+    width: 100%;
+    height: 100%;
     position: relative;
     text-align: left;
     font-size: large;
@@ -19,9 +21,10 @@
 
 .icon-and-contact-container:not(.footer_para_c1_line) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
+    width: 50%;
     margin: 0;
     padding: 0;
 }
@@ -29,9 +32,8 @@
 
 .logo-image-footer {
     height: auto;
-    width: 300px;
+    width: 40%;
     margin-bottom: -40px;
-    margin-top: -40px;
     padding-top: 0;
     padding-left: 47px;
 }
@@ -45,13 +47,13 @@
     content: '';
     position: absolute;
     height: 1px;
-    width: 100%;
+    width: 50%;
     background-color: white;
 }
 
 .footer_p {
     padding-left: 55px;
-    width: 200%;
+    width: 100%;
 }
 
 .footer_p a{
@@ -64,8 +66,7 @@
     justify-content: right;
     align-items: center;
     height: 100%;
-    
-    width: 100%; 
+    width: 50%; 
     padding-right: 100px; 
 }
 
@@ -155,7 +156,7 @@
     }
 
     .footer .logo-image-footer {
-        width: 40%;
+        width: 100%;
         text-align: center; 
         padding: 0; 
         margin: 0; 
@@ -204,7 +205,7 @@
     .icon-and-contact-container {
         width: 50%;
     }
-    .icon-and-contact:not(.footer_para_c1_line), .socials-and-impressum-container, .impressum_button {
+    .icon-and-contact:not(.footer_para_c1_line) {
         text-align: center; 
         display: flex;
         flex-direction: column;
@@ -213,15 +214,8 @@
         margin: 0; 
     }
 
-    .icon-and-contact:not(.logo-image-footer, .footer_p) {
-        display: flex;
-        justify-content: flex-end;
-    }
     .footer_para_c1_line {
-        text-align: left;
-        margin: 0;
-        display: flex;
-        justify-content: left;
+        display: none;
     }
 
     .footer_para_c1_line_contact_impressum {
@@ -230,11 +224,11 @@
 
     .facebook_button {
         display: flex;
-        width: 10%;
+        width: 20%;
         height: 50%;
         padding: 0;
         align-items: flex-end;
-        padding-bottom: 10%;
+        padding-bottom: 20%;
     }
 
     .socials-and-impressum {
@@ -242,8 +236,8 @@
         padding-left: 0;
         padding-top: 0;
         display: flex;
-        align-items: center;
         height: 100%;
+        width: 50%;
     }
 
     .footer .logo-image-footer {
@@ -266,18 +260,24 @@
         color: white;
         padding: 0; 
         margin: 0;
+        font-size: 1.5rem;
+    font-weight: 300;
     }
 
     .socials-and-impressum-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
+        align-items: end;
         flex-direction: column; 
         padding-right: 0;
         width: 50%;
     }
 
     .kontakt_button {
+        padding: 0;
+    }
+
+    .impressum_button{
         padding: 0;
     }
 }
