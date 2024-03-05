@@ -17,10 +17,6 @@
     margin: auto;
 }
 
-.footer .logo-image-footer {
-    padding-left: 47px;
-}
-
 .icon-and-contact-container {
     display: flex;
     justify-content: center;
@@ -32,10 +28,12 @@
 
 
 .logo-image-footer {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 300px;
     margin-bottom: -40px;
+    margin-top: -40px;
     padding-top: 0;
+    padding-left: 47px;
 }
 
 .footer_para_c1_line {
@@ -56,14 +54,19 @@
     width: 200%;
 }
 
-.contact-and-impressum-container {
+.footer_p a{
+    color: inherit; /* Erbt die Farbe von Elternelementen */
+    text-decoration: none;
+}
+
+.socials-and-impressum-container {
     display: flex;
     justify-content: flex-end; 
     width: 100%; 
     padding-right: 100px; 
 }
 
-.contact-and-impressum {
+.socials-and-impressum {
     display: flex;
     flex-direction: column; 
     justify-items: center;
@@ -72,7 +75,7 @@
     padding-top: 90px; 
 }
 
-.contact_button {
+.facebook_button {
     width: 60px;
     height: auto;
     text-align: left;
@@ -82,7 +85,7 @@
     border: 0;
 }
 
-.contact_button:hover {
+.facebook_button:hover {
     cursor: pointer;
 }
 
@@ -99,7 +102,7 @@
     background-color: white;
 }
 
-.impressum_button {
+.impressum_button, .kontakt_button {
     text-align: left;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0);
@@ -123,7 +126,7 @@
         height: 400px;
     }
     
-    .icon-and-contact, .footer_p, .footer_para_c1_line, .contact-and-impressum-container, .impressum_button {
+    .icon-and-contact, .footer_p, .footer_para_c1_line, .socials-and-impressum-container, .impressum_button {
         width: 100%; 
         text-align: center; 
         display: flex;
@@ -133,11 +136,11 @@
         margin: 0; 
     }
 
-    .contact_button {
+    .facebook_button {
         width: 80px;
     }
 
-    .contact-and-impressum {
+    .socials-and-impressum {
         margin: 0;
         padding-left: 0;
         padding-top: 0;
@@ -151,9 +154,10 @@
         text-align: center; 
         padding: 0; 
         margin: 0; 
+        margin-bottom: -15px;
     }
 
-    .contact-and-impressum-container button {
+    .socials-and-impressum-container button {
         font-size: 1.5rem;
         font-weight: 300;;
     }
@@ -171,7 +175,7 @@
         padding-bottom: 5px;
     }
 
-    .contact-and-impressum-container {
+    .socials-and-impressum-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,12 +216,12 @@
         padding-left: 0%;
     }
 
-    .contact-and-impressum-container {
+    .socials-and-impressum-container {
         justify-content: center;
         padding-top: 0;
     }
 
-    .contact_button {
+    .facebook_button {
         text-align: center;
         font-size: 1rem;
     }
