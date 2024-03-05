@@ -19,7 +19,7 @@ img, video, iframe {
 }
 
 p {
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
 }
 
@@ -36,4 +36,10 @@ h1 {
 h2 {
   font-size: 3rem;
   letter-spacing: 3px;
+}
+
+@media (max-width: 499px) {
+  p {
+    font-weight: 3500;
+  }
 }

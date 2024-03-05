@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 499px) {
+    .info-box {
+        width: 97%;
+    }
+
     .home_main_text {
         font-size: 12px;
     }

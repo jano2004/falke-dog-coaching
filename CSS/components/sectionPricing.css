@@ -17,7 +17,7 @@
 
 .training_type_list, .training_type_list_no_header {
     list-style-type: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 100;
     margin: 0;
     margin-left: 20px;
@@ -31,7 +31,7 @@
 
 .training_type_list p {
     position: relative;
-    font-weight: normal;
+    font-weight: bold;
     padding-top: 25px;
     text-align: center;
 }
