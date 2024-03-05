@@ -21,6 +21,8 @@
 }
 
 .info_box_header, .header_mein_hundetraining {
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 2.9rem;
     text-align: center;
