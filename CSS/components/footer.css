@@ -137,8 +137,13 @@
         width: 80px;
     }
 
-    .contact-and-impressum-container {
-        padding-right: 0;
+    .contact-and-impressum {
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
     }
 
     .footer .logo-image-footer {
@@ -163,6 +168,7 @@
 
     .footer_p {
         color: white;
+        padding-bottom: 5px;
     }
 
     .contact-and-impressum-container {
@@ -170,6 +176,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column; 
+        padding-right: 0;
     }
 }
 
