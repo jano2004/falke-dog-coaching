@@ -14,10 +14,10 @@
     position: relative;
     text-align: left;
     font-size: large;
-    margin: auto;
+    margin: 0;
 }
 
-.icon-and-contact-container {
+.icon-and-contact-container:not(.footer_para_c1_line) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,10 @@
 
 .socials-and-impressum-container {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    
     width: 100%; 
     padding-right: 100px; 
 }
@@ -71,8 +74,7 @@
     flex-direction: column; 
     justify-items: center;
     list-style: none; 
-    margin-top: auto;
-    padding-top: 90px; 
+    margin: 0;
 }
 
 .facebook_button {
@@ -83,6 +85,7 @@
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 0;
+    padding-top: 5px;
 }
 
 .facebook_button:hover {
@@ -187,49 +190,94 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-        height: 600px;
-    }
-
-    .footer .logo-image-footer {
-        margin-top: 0;
-        width: 50%;
-        padding-left: 25%;
-        padding-top: 5%;
-        height: auto;
+    .footer_container {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
     }
     
     .icon-and-contact {
-        position: relative;
-        padding-left: 0;
+        height: 100%;
         width: 100%;
     }
-
-    .footer_p {
-        text-align: center;
-        padding-left: 0;
+    
+    .icon-and-contact-container {
+        width: 50%;
+    }
+    .icon-and-contact:not(.footer_para_c1_line), .socials-and-impressum-container, .impressum_button {
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+        margin: 0; 
     }
 
+    .icon-and-contact:not(.logo-image-footer, .footer_p) {
+        display: flex;
+        justify-content: flex-end;
+    }
     .footer_para_c1_line {
-        margin-top: 0;
-        padding-top: 0;
-        padding-left: 0%;
+        text-align: left;
+        margin: 0;
+        display: flex;
+        justify-content: left;
     }
 
-    .socials-and-impressum-container {
-        justify-content: center;
-        padding-top: 0;
+    .footer_para_c1_line_contact_impressum {
+        display: none;
     }
 
     .facebook_button {
-        text-align: center;
-        font-size: 1rem;
+        display: flex;
+        width: 10%;
+        height: 50%;
+        padding: 0;
+        align-items: flex-end;
+        padding-bottom: 10%;
     }
 
-    .impressum_button {
-        text-align: center;
-        font-size: 1rem;
+    .socials-and-impressum {
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .footer .logo-image-footer {
+        display: flex;
+        align-items: flex-start;
+        height: 50%;
+        width: auto;
+        text-align: center; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .socials-and-impressum-container button {
+        font-size: 1.5rem;
+        font-weight: 300;;
+    }
+    
+
+    .footer_p {
+        color: white;
+        padding: 0; 
+        margin: 0;
+    }
+
+    .socials-and-impressum-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        padding-right: 0;
+        width: 50%;
+    }
+
+    .kontakt_button {
+        padding: 0;
     }
 }
