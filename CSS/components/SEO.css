@@ -1,5 +1,7 @@
 .seo {
     position: absolute;
-    font-weight: 0;
+    font-weight: 0px;
+    color: black;
+    font-size: 1px;
     z-index: -10;
 }
