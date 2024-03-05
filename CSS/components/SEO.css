@@ -1,0 +1,5 @@
+.seo {
+    position: absolute;
+    font-weight: 0;
+    z-index: -10;
+}
