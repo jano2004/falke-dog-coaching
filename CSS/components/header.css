@@ -29,11 +29,10 @@
 }
 
 #home_nav_bar::after {
-    text-align: center;
     content: '';
-    position: absolute;
     height: 1px;
     width: 100%;
+    left: 0px;
     background-color: white;
 }
 
