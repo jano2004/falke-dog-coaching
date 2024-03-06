@@ -57,7 +57,7 @@
 }
 
 .footer_p a{
-    color: inherit; /* Erbt die Farbe von Elternelementen */
+    color: inherit; 
     text-decoration: none;
 }
 
