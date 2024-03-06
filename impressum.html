@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Falke Dog Coaching</title>
+    <link rel="stylesheet" href="CSS/utils/styles.css">
+    <link rel="stylesheet" href="CSS/components/header.css">
+    <link rel="stylesheet" href="CSS/components/headerPic.css">
+    <link rel="stylesheet" href="CSS/components/mainStart.css">
+    <link rel="stylesheet" href="CSS/components/sections.css">
+    <link rel="stylesheet" href="CSS/components/homeText.css">
+    <link rel="stylesheet" href="CSS/components/historieText.css">
+    <link rel="stylesheet" href="CSS/components/footer.css">
+    <link rel="stylesheet" href="CSS/components/sectionPricing.css">
+    <link rel="stylesheet" href="CSS/components/infoBox.css">
+    <link rel="stylesheet" href="CSS/components/smallHeader.css">
+    <link rel="stylesheet" href="CSS/components/SEO.css">
+    <link rel="stylesheet" href="CSS/components/impressum.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="logo-image">
+        </div>
+
+        <div onclick="scrollToElementHome()" class="nav-item"><a class="nav-link" id="home_nav_bar">HOME</a></div>
+        <script>
+            function scrollToElementHome() {
+                document.getElementById("home").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementRefernzen()" class="nav-item"><a class="nav-link">PHILOSOPHIE</a></div>
+        <script>
+            function scrollToElementRefernzen() {
+                document.getElementById("phylosophie").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementLeistung()" class="nav-item"><a class="nav-link">COACHING</a></div>
+        <script>
+            function scrollToElementLeistung() {
+                document.getElementById("leistungen").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementPreise()" class="nav-item"><a class="nav-link">PREISE</a></div>
+        <script>
+            function scrollToElementPreise() {
+                document.getElementById("preise").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+
+        <div onclick="scrollToElementHistorie()" class="nav-item"><a class="nav-link">HISTORIE</a></div>
+        <script>
+            function scrollToElementHistorie() {
+                document.getElementById("historie").scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+    </header>
+
+    <div class="small_header">
+        <nav>  
+            <div class="small_header_background">
+                <div class="small_header_background_logo">
+                    <img src="pictures/logo.png" alt="Falke Dog Coaching Logo" class="small_header_background_logo_img">
+                    <img src="pictures/headerNavBarIcon.png" alt="NAVBAR" class="small_header_background_navbar_img" id="down">
+                    <img src="pictures/headerNavBarIconUp.png" alt="NAVBAR" class="small_header_background_navbar_img" id="up">
+                </div>
+            </div>
+            <div class="small_header_menu_container">
+                <ul class="small_header_menu">
+                    <li>
+                        <a onclick="scrollToElementHome()" class="small_header_menu_home">HOME</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementRefernzen()" class="small_header_menu_philosophie">PHILOSOPHIE</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementLeistung()" class="small_header_menu_leistungen">COACHING</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementPreise()" class="small_header_menu_preise">PREISE</a>
+                    </li>
+                    <li>
+                        <a onclick="scrollToElementHistorie()" class="small_header_menu_historie">HISTORIE</a>
+                    </li>
+                    <p></p>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const downIcon = document.getElementById('down');
+            const upIcon = document.getElementById('up');
+            const menu = document.querySelector('.small_header_menu');
+            const home = document.querySelector('.small_header_menu_home');
+            const philosophie = document.querySelector('.small_header_menu_philosophie');
+            const leistungen = document.querySelector('.small_header_menu_leistungen');
+            const preise = document.querySelector('.small_header_menu_preise');
+            const historie = document.querySelector('.small_header_menu_historie');
+
+            upIcon.style.display = 'none'; 
+        
+            const toggleMenu = () => {
+                if (menu.classList.contains('show')) {
+                    menu.classList.remove('show'); 
+                    upIcon.style.display = 'none'; 
+                    downIcon.style.display = 'block';
+                } else {
+                    menu.classList.add('show');
+                    upIcon.style.display = 'block';
+                    downIcon.style.display = 'none'; 
+                }
+            };
+        
+            downIcon.addEventListener('click', toggleMenu);
+            upIcon.addEventListener('click', toggleMenu);
+            home.addEventListener('click', toggleMenu);
+            philosophie.addEventListener('click', toggleMenu);
+            leistungen.addEventListener('click', toggleMenu);
+            preise.addEventListener('click', toggleMenu);
+            historie.addEventListener('click', toggleMenu);
+        });
+    </script>
+
+    <div class="justify_main_impressum_container">
+        <div class="main_impressum_container">
+            <div class="main_impressum_container_left">
+                
+            </div>
+            <div class="main_impressum_container_right">
+                
+            </div>
+        </div>
+    </div>
+</body>

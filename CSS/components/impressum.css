@@ -1,0 +1,33 @@
+.justify_main_impressum_container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.main_impressum_container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 800px;
+    background-color: aqua;
+}
+
+.main_impressum_container_left {
+    display: flex;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: red;
+}
+
+.main_impressum_container_right {
+    display: flex;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: blue;
+}
+
