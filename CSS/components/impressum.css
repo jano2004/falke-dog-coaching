@@ -13,21 +13,37 @@
     width: 80%;
     height: 800px;
     background-color: aqua;
+    text-align: left;
+    flex-direction: column;
 }
 
-.main_impressum_container_left {
-    display: flex;
-    position: relative;
-    width: 45%;
-    height: 100%;
-    background-color: red;
+.impressum_header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: 3px;
 }
 
-.main_impressum_container_right {
-    display: flex;
-    position: relative;
-    width: 45%;
-    height: 100%;
-    background-color: blue;
+.impressum::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background-color: black;
 }
 
+.impressum_descriptions {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    width: 82%;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.impressum_email:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

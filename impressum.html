@@ -137,14 +137,25 @@
             historie.addEventListener('click', toggleMenu);
         });
     </script>
+    <script>
+        function sendFormularToEmail() {
+            var email = 'j.falke@falke-dog-coaching.com'; 
+            var subject = encodeURIComponent('Ausgefülltes Formular von: ');
+            var body = encodeURIComponent('Hiermit sende ich, Jennifer Falke mein ausgefülltes Formular.\n \nBitte Datei anfügen! \nTragen Sie Ihren Namen im Betreff ein!');
+            var mailtoLink = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+            window.location.href = mailtoLink;
+        }
+    </script>
 
     <div class="justify_main_impressum_container">
         <div class="main_impressum_container">
-            <div class="main_impressum_container_left">
-                
-            </div>
-            <div class="main_impressum_container_right">
-                
+            <p class="impressum_header">Impressum</p>
+            <div class="impressum_descriptions">
+                <p>Falke Dog Coaching(Offizieler Unternehmensname?)</p>
+                <p>Anschrift?</p>
+                <p><a href="tel:+4915773513694">+49(0)157 735 136 94</a></p>
+                <p onclick="sendFormularToEmail()" class="impressum_email">j.falke@falke-dog-coaching.com</p>
+                <p>Umsatzsteuer-Identifikationsnummer?</p>
             </div>
         </div>
     </div>
