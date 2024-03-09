@@ -8,13 +8,12 @@
 .main_impressum_container {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 80%;
     height: 800px;
     background-color: aqua;
-    text-align: left;
-    flex-direction: column;
+    text-align: lef
 }
 
 .impressum_header {
