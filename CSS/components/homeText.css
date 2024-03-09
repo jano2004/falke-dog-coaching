@@ -35,8 +35,12 @@
   }
 
   .para_c1::before, .para_c1::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
     height: 1px;
-    font-weight: 100;
+    background-color: black;
   }
 
   .para_c1_line {
